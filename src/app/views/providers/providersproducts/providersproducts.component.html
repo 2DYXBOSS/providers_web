@@ -1,0 +1,417 @@
+<div class="container-fluid mt-5 p-3">
+  <!-- Button Group -->
+
+  <div class=" ms-auto d-flex justify-content-between align-items-center w-full">
+
+    <div class="d-flex gap-3 align-items-start ">
+      <img src="assets/img/icons/fleche.png" style="margin-top: 8px;" alt="" width="10" height="10" routerLink="/providers" />
+      <p>Fornisseur </p>
+    </div>
+
+    <a routerLink="/parameter"><img src="assets/img/icons/parametre.png" alt="" width="20" height="20" /></a>
+
+  </div>
+
+  <div class="col-12 d-flex flex-wrap align-items-center">
+    <div class="order-item d-flex align-items-center order-item-large col-md-3">
+
+
+      <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
+        routerLink="commandes" />
+      <div class="rounded-circle ">
+
+      </div>
+      <div class="product-info">
+
+        <p><small class="">BOUTIQUE LENOVO</small></p>
+        <small>Fornisseur:DK-FRD-345</small>
+        <small>Inscrit le : 12/30/30 29:23</small>
+      </div>
+    </div>
+
+    <div class="d-flex col-md-9 flex-wrap">
+      <div style="width: 100%;display: flex;flex-wrap: wrap;gap: 10px;">
+
+
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/commandes">
+          <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20" height="20" />
+          Commandes</button>
+
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid #FF9500;background-color: #FF9500;color: white;position: relative;border-radius: 4px;" routerLink="/providers/products">
+          <img src="assets/img/icons/product.png" style="position: absolute;left: 10px;filter: invert();" alt=""
+            width="20" height="20" />
+          Produits</button>
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/comptables">
+          <img src="assets/img/icons/comptable.png " style="position: absolute;left: 10px;" alt="" width="20"
+            height="20" />
+          Comptable</button>
+
+
+      </div>
+
+    </div>
+    <div class="col-md-2 ms-auto d-flex justify-content-end align-items-start">
+      <!-- <img src="assets/img/icons/filtre.png" alt="" width="30" height="30" /> -->
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row d-flex p-3 box-1">
+    <div class="flex-wrap d-flex w-full">
+      <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
+        <!-- <button class="btn btn-primary btn-border btn-round w-auto me-3" >
+          En stock
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-auto  me-3">
+          Stock épuisé
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-auto">
+          Inactifs
+        </button> -->
+        
+          <div class="nav " id="nav-tab" role="tablist">
+            <button class="nav-link active btn-round btn-border btn btn-primary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">En stock</button>
+            <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Épuisé</button>
+            <button class="nav-link btn-round btn-border btn btn-primary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inactifs</button>
+            
+          </div>
+      
+      
+
+      </div>
+      <div class="col-md-3 ms-auto d-flex justify-content-end">
+        <button class="btn btn-primary btn-border btn-round btn-add" style="width: 70%" routerLink="/products/add">
+          Ajouter un produit
+        </button>
+      </div>
+    </div>
+    <div class="col-md-1 ms-auto d-flex justify-content-end">
+
+    </div>
+  </div>
+
+  
+
+ 
+  
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                    <i class="fa fa-search"></i>
+                  </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-success py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-success py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                    <i class="fa fa-search"></i>
+                  </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+         
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                    <i class="fa fa-search"></i>
+                  </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+         
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-info py-2 px-4 badge-round">Inactifs</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-info py-2 px-4 badge-round">Inactifs</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

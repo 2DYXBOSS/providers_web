@@ -1,0 +1,266 @@
+<div class="container-fluid mt-5 p-3">
+  <!-- Button Group -->
+  <div class="row d-flex p-3 box-1">
+    <div class="col-md-6 d-flex justify-content-between mb-3 mb-md-0">
+      <!-- <button class="btn btn-primary btn-border btn-round w-50 me-3">
+        Centre commande
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50 me-3">
+        Reporté
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50">
+        Annulées
+      </button> -->
+
+      <div class="nav " id="nav-tab" role="tablist">
+        <button class="nav-link active btn-round btn-border btn btn-primary" style="width: auto;" id="nav-home-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Centre
+          commande</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+          aria-selected="false">Reporté</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-contact-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+          aria-selected="false">Annulées</button>
+
+      </div>
+    </div>
+    <div class="col-md-4 ms-auto d-flex justify-content-end">
+      <img src="assets/img/icons/filtre.png" alt="" width="30" height="30" />
+    </div>
+  </div>
+
+
+
+  <div class="tab-content" id="nav-tabContent">
+
+    <!-- Tout -->
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <!-- on boucle ceci -->
+
+      <div class="row box-2">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img class="product-image" src="assets/img/products/pducts-1.png" alt="Product Image"
+              routerLink="details_call" />
+            <div class="product-info">
+              <span class="product-name" routerLink="details_call">Range cuisine moderne</span>
+              <p><small class="">#45DT57788839</small></p>
+              <small>Aujourd'hui, à 10h10</small>
+            </div>
+          </div>
+          <div class="order-item">
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div class="order-item">
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+          <div class="order-item order-item-large" style="border-left: 1px solid #ccc; padding-left: 30px">
+            <p class="m-0">Lamine, Laetitia & Cissé</p>
+            <small class="m-0" style="color: red;">Réporté pour aujourd'hui a 19h30</small>
+            <div class="row d-flex justify-content-center mt-3">
+              <div class="col-6">
+                <!-- <button class="btn btn-border-custom w-auto">
+                  MARQUER <i class="fas fa-chevron-down mx-2"></i>
+                </button> -->
+                <div class="dropdown" >
+                  <select class="btn border form-select "  aria-label="Default select example" >
+          
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">REPORTER <i class="fas fa-chevron-down mx-2"></i></div></option>
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: rgb(0, 76, 255);color: white;border: none;">En cours de traitement</div></option>
+                    <option value="2"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: orange;color: white;margin-top: 5px;">Décroche pas</div></option>
+                    <option value="3"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">Annuelé</div></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-border-custom w-auto">APPELER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row box-2">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img class="product-image" src="assets/img/products/pducts-1.png" alt="Product Image"
+              routerLink="details_call" />
+            <div class="product-info">
+              <span class="product-name" routerLink="details_call">Range cuisine moderne</span>
+              <p><small class="">#45DT57788839</small></p>
+              <small>Aujourd'hui, à 10h10</small>
+            </div>
+          </div>
+          <div class="order-item">
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div class="order-item">
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+          <div class="order-item order-item-large" style="border-left: 1px solid #ccc; padding-left: 30px">
+            <p class="m-0">Lamine, Laetitia & Cissé</p>
+            <small class="m-0" style="color: blue;">Commande en cours de traitement</small>
+            <div class="row d-flex justify-content-center mt-3">
+              <div class="col-6">
+                <!-- <button class="btn btn-border-custom w-auto">
+                  MARQUER <i class="fas fa-chevron-down mx-2"></i>
+                </button> -->
+                <div class="dropdown" >
+                  <select class="btn border form-select "  aria-label="Default select example" >
+          
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">En cours <i class="fas fa-chevron-down mx-2"></i></div></option>
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: rgb(0, 76, 255);color: white;border: none;">Annuelé  </div></option>
+                    <option value="2"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: orange;color: white;margin-top: 5px;">Décroche pas</div></option>
+                    <option value="3"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">REPORTER</div></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-border-custom w-auto">APPELER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <!-- Commande -->
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="row box-2">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img class="product-image" src="assets/img/products/pducts-1.png" alt="Product Image"
+              routerLink="details_call" />
+            <div class="product-info">
+              <span class="product-name" routerLink="details_call">Range cuisine moderne</span>
+              <p><small class="">#45DT57788839</small></p>
+              <small>Aujourd'hui, à 10h10</small>
+            </div>
+          </div>
+          <div class="order-item">
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div class="order-item">
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+          <div class="order-item order-item-large" style="border-left: 1px solid #ccc; padding-left: 30px">
+            <p class="m-0">Lamine, Laetitia & Cissé</p>
+            <small class="m-0">Client en attente de votre appel depuis 3 min</small>
+            <div class="row d-flex justify-content-center mt-3">
+              <div class="col-6">
+                <!-- <button class="btn btn-border-custom w-auto">
+                  MARQUER <i class="fas fa-chevron-down mx-2"></i>
+                </button> -->
+                <div class="dropdown" >
+                  <select class="btn border form-select "  aria-label="Default select example" >
+          
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">REPORTER <i class="fas fa-chevron-down mx-2"></i></div></option>
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: rgb(0, 76, 255);color: white;border: none;">En cours de traitement</div></option>
+                    <option value="2"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: orange;color: white;margin-top: 5px;">Décroche pas</div></option>
+                    <option value="3"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">Annuelé</div></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-border-custom w-auto">APPELER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Attente -->
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+      <!-- on boucle ceci -->
+      <div class="row box-2">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img class="product-image" src="assets/img/products/pducts-1.png" alt="Product Image"
+              routerLink="details_call" />
+            <div class="product-info">
+              <span class="product-name" routerLink="details_call">Range cuisine moderne</span>
+              <p><small class="">#45DT57788839</small></p>
+              <small>Aujourd'hui, à 10h10</small>
+            </div>
+          </div>
+          <div class="order-item">
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div class="order-item">
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div class="order-item">
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+          <div class="order-item order-item-large" style="border-left: 1px solid #ccc; padding-left: 30px">
+            <p class="m-0">Lamine, Laetitia & Cissé</p>
+            <small class="m-0">Client en attente de votre appel depuis 3 min</small>
+            <div class="row d-flex justify-content-center mt-3">
+              <div class="col-6">
+                <!-- <button class="btn btn-border-custom w-auto">
+                  MARQUER <i class="fas fa-chevron-down mx-2"></i>
+                </button> -->
+                <div class="dropdown" >
+                  <select class="btn border form-select "  aria-label="Default select example" >
+          
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">Annuelé <i class="fas fa-chevron-down mx-2"></i></div></option>
+                    <option value="1"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: rgb(0, 76, 255);color: white;border: none;">En cours de traitement</div></option>
+                    <option value="2"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: orange;color: white;margin-top: 5px;">Décroche pas</div></option>
+                    <option value="3"><div class="dropdown-item btn btn-border-custom w-auto" style="background-color: red;color: white;margin-top: 5px;border: none;">REPORTER</div></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-border-custom w-auto">APPELER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

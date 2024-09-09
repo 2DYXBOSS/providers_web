@@ -1,0 +1,753 @@
+<div class="container-fluid mt-5 p-3">
+    <!-- Button Group -->
+    <div class="row d-flex p-3 box-1">
+      <div class="d-flex  justify-content-between mb-3 mb-md-0 " id="moedp">
+        <!-- <button class="btn btn-primary btn-border btn-round w-50 me-3" >
+          Tout
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" >
+          Commande
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50" >
+          Attente
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" >
+          En cours
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" >
+          Livrée
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50" >
+          Annulées
+        </button> -->
+
+        <div class="nav " id="nav-tab" role="tablist">
+          <button class="nav-link active btn-round btn-border btn btn-primary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tout</button>
+          <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Commande</button>
+          <button class="nav-link btn-round btn-border btn btn-primary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Attente</button>
+          <button class="nav-link btn-round btn-border btn btn-primary" id="nav-encours-tab" data-bs-toggle="tab" data-bs-target="#nav-encours" type="button" role="tab" aria-controls="nav-encours" aria-selected="false">En cours</button>
+          <button class="nav-link btn-round btn-border btn btn-primary" id="nav-livree-tab" data-bs-toggle="tab" data-bs-target="#nav-livree" type="button" role="tab" aria-controls="nav-livree" aria-selected="false">Livrée</button>
+          <button class="nav-link btn-round btn-border btn btn-primary" id="nav-annule-tab" data-bs-toggle="tab" data-bs-target="#nav-annule" type="button" role="tab" aria-controls="nav-annule" aria-selected="false">Annulées</button>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+
+      <!-- Tout -->
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <!-- on boucle ceci -->
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            
+            <div class="order-item">
+              <div class="forue112" style="border-right: 1px solid #ccc;">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-item order-item-large"
+              style=" background-color: white;"
+            >
+              <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+              <small >Statut</small>
+              <small >Aujourd'hui, à 10h10</small>
+              </div>
+              <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+               
+                  <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: orange;color: white;border-radius: 4px;">Nouvelle commande </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(62, 8, 85);color: white;border-radius: 4px;"> Commande en attente</button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(37, 74, 255);color: white;border-radius: 4px;"> En cours de livraison </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(113, 188, 0);color: white;border-radius: 4px;"> Commande Livrée </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: red;color: white;border-radius: 4px;"> Commande Annulées </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Commande -->
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            
+            <div class="order-item">
+              <div class="forue112" style="border-right: 1px solid #ccc;">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-item order-item-large"
+              style=" background-color: white;"
+            >
+              <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+              <small >Statut</small>
+              <small >Aujourd'hui, à 10h10</small>
+              </div>
+              <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+               
+                  <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: orange;color: white;border-radius: 4px;">Nouvelle commande </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Attente -->
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+        <!-- on boucle ceci -->
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(62, 8, 85);color: white;border-radius: 4px;"> Commande en attente</button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Encours -->
+      <div class="tab-pane fade" id="nav-encours" role="tabpanel" aria-labelledby="nav-encours-tab" tabindex="0">
+        <!-- on boucle ceci -->
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(37, 74, 255);color: white;border-radius: 4px;"> En cours de livraison </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Livrée -->
+      <div class="tab-pane fade" id="nav-livree" role="tabpanel" aria-labelledby="nav-livree-tab" tabindex="0">
+        <!-- on boucle ceci -->
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: rgb(113, 188, 0);color: white;border-radius: 4px;"> Commande Livrée </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Annulées -->
+      <div class="tab-pane fade" id="nav-annule" role="tabpanel" aria-labelledby="nav-annule-tab" tabindex="0">
+        <!-- on boucle ceci -->
+        <div class="row box-2">
+          <div class="col-12 d-flex flex-wrap order-row align-items-center">
+            <div class="order-item d-flex align-items-center order-item-large">
+              <img
+                class="product-image"
+                src="assets/img/products/pducts-1.png"
+                alt="Product Image"
+                routerLink="/orders/details_coord"
+              />
+              <div class="product-info">
+                <span class="product-name" routerLink="/orders/details_coord"
+                  >Range cuisine moderne</span
+                >
+                <p><small class="">#45DT57788839</small></p>
+                <small>Aujourd'hui, à 10h10</small>
+              </div>
+            </div>
+            <div class="order-item">
+              <p class="label">Prix de vente</p>
+              <p class="value">10 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <p class="label">Frais de livraison</p>
+              <p class="value">2 000 FCFA</p>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="forue112">
+                <div class="cersle">
+          
+                </div>
+                <div class="cersle2">
+                  <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+          
+                  <p class="value text-danger" style="font-weight: bolder;font-size: 0.6rem;" >NON SOLDER</p>
+                 
+                  
+          
+                </div>
+              </div>
+            </div>
+            <div
+            class="order-item order-item-large"
+            style=" background-color: white;"
+          >
+            <div style="display: flex;justify-content: space-between;align-items: center;gap: 40px;width: 100%;background-color: white;">
+            <small >Statut</small>
+            <small >Aujourd'hui, à 10h10</small>
+            </div>
+            <div  style="margin-left: 2px;margin-top: 10px;width: 100%;">
+             
+                <button style="width: 100%;padding-bottom: 10px;padding-top: 10px;border: none;background-color: red;color: white;border-radius: 4px;"> Commande Annulées </button>
+            
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+     
+  
+    </div>
+    
+  </div>
+  

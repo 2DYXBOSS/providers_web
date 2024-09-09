@@ -1,0 +1,586 @@
+<div class="container-fluid mt-5 p-3">
+  <!-- Button Group -->
+
+  <!-- <div class="row d-flex p-3 box-1">
+        <div class="flex-wrap d-flex w-full">
+        <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
+            <button class="btn btn-round btn-info w-auto d-flex text-white " >
+               <small style="color: white;">Nouveau</small>
+                </button>
+            <button class="btn btn-primary btn-border btn-round w-auto  me-3" >
+                En stock
+            </button>
+            <button class="btn btn-primary btn-border btn-round w-auto" >
+                Publier
+            </button>
+           
+            <button class="btn btn-primary btn-border btn-round w-auto  me-3" routerLink="/products/finish">
+                Stock épuisé
+            </button>
+            <button class="btn btn-primary btn-border btn-round w-auto" routerLink="/products/Inactif">
+                Inactifs
+            </button>
+           
+
+        </div>
+        <div class="col-md-5 d-flex flex-wrap justify-content-end mb-3 mb-md-0">
+          
+          
+           
+            <button class="btn btn-round btn-warning w-auto d-flex text-white ">
+               
+                Ajouter un produit</button>
+        </div>
+        </div>
+        <div class="col-md-1 ms-auto d-flex justify-content-end">
+
+        </div>
+    </div> -->
+  <div class="row d-flex p-3 box-1">
+    <div class="col-md-7 d-flex justify-content-between mb-3 mb-md-0">
+      <!-- <button class="btn btn-border btn-round w-50 me-3" style="background-color: blue;" routerLink="/products">
+        Nouveau
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/stock">
+        En stock
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/post">
+        Publier
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/finish">
+        Stock épuisé
+      </button>
+      <button class="btn btn-primary btn-border btn-round w-50" routerLink="/products/inactive">
+        Inactifs
+      </button> -->
+
+      <div class="nav gap-3" id="nav-tab" role="tablist" >
+        <button style="padding-left: 40px;padding-right: 40px;" class="nav-link active btn-round btn-border btn btn-primary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Nouveau</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">En stock</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Publier</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-epuise-tab" data-bs-toggle="tab" data-bs-target="#nav-epuise" type="button" role="tab" aria-controls="nav-epuise" aria-selected="false">Stock épuisé</button>
+        <button class="nav-link btn-round btn-border btn btn-primary" id="nav-inactifs-tab" data-bs-toggle="tab" data-bs-target="#nav-inactifs" type="button" role="tab" aria-controls="nav-inactifs" aria-selected="false">Inactifs</button>
+        
+      </div>
+    </div>
+    <div class="col-md-3 ms-auto d-flex justify-content-end">
+      <button class="btn btn-primary btn-border btn-round btn-add" style="width: 70%" routerLink="/products/add">
+        Ajouter un produit
+      </button>
+    </div>
+  </div>
+
+  
+
+
+
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                  <i class="fa fa-search"></i>
+                </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-success py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-success py-2 px-4 badge-round">En vente</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+      </div>
+    </div>
+
+
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                  <i class="fa fa-search"></i>
+                </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge btn-success py-2 px-4 badge-round" >Publié</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge py-2 px-4 badge-round" style="background-color: rgb(252, 32, 105);">Non publié</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    
+    
+    
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                  <i class="fa fa-search"></i>
+                </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge btn-success py-2 px-4 badge-round" >Publié</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    
+    
+    
+      </div>
+    </div>
+    <!-- epuise -->
+    <div class="tab-pane fade" id="nav-epuise" role="tabpanel" aria-labelledby="nav-epuise-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                  <i class="fa fa-search"></i>
+                </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge  py-2 px-4 badge-round" style="background-color: rgb(254, 32, 69);">Epuisé</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    
+    
+    
+      </div>
+    </div>
+    <!-- inactif -->
+    <div class="tab-pane fade" id="nav-inactifs" role="tabpanel" aria-labelledby="nav-inactifs-tab" tabindex="0">
+      <div class="pt-2 px-3">
+        <!-- Search and Filter -->
+        <div class="row mt-1 p-2">
+          <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group me-2" style="width: 50%">
+                <div class="input-group search-bar">
+                  <input type="text" placeholder="Recherche" class="form-control" />
+    
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <span class="input-group-bar"></span>
+                      <i class="fa fa-search search-icon"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- <span class="input-group-text rounded-end" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                  <i class="fa fa-search"></i>
+                </span> -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 1.5rem; position: relative">
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Cards -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-info py-2 px-4 badge-round">Invisible</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-warning py-2 px-4 badge-round">Indisponible</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-danger py-2 px-4 badge-round">Supprimé</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4" routerLink="/products/detail">
+            <div class="card product-card">
+              <!-- Badge -->
+              <span class="badge bg-dark py-2 px-4 badge-round">Non comfirmé</span>
+    
+              <!-- Image -->
+              <div class="p-2">
+                <img src="assets/img/products/cuilliere.png" class="card-img-top" alt="Sunset Over the Sea" />
+              </div>
+    
+              <!-- Card Body -->
+              <div class="card-body">
+                <h5 class="card-title mt-0">Range cuisine moderne</h5>
+                <p class="card-price">10000 FCFA</p>
+                <div class="d-flex justify-content-between">
+                  <small class="text-muted">Stock <span class="stock-number">99</span> / 110 Pièces</small>
+                  <small class="text-muted stock-number">Bon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+      </div>
+    </div>
+
+  </div>
+</div>

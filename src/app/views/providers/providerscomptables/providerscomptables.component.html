@@ -1,0 +1,270 @@
+<div class="container-fluid mt-5 p-3">
+    <!-- Button Group -->
+
+    <div class=" ms-auto d-flex justify-content-between align-items-center w-full">
+
+        <div class="d-flex gap-3 align-items-start ">
+            <img src="assets/img/icons/fleche.png" style="margin-top: 8px;" alt="" width="10" height="10" routerLink="/providers" />
+            <p>Fornisseur </p>
+        </div>
+
+        <a routerLink="/parameter"><img src="assets/img/icons/parametre.png" alt="" width="20" height="20" /></a>
+
+    </div>
+
+    <div class="col-12 d-flex flex-wrap  align-items-center">
+        <div class="order-item d-flex align-items-center order-item-large col-md-3">
+
+
+            <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
+                routerLink="commandes" />
+            <div class="rounded-circle ">
+
+            </div>
+            <div class="product-info">
+
+                <p><small class="">BOUTIQUE LENOVO</small></p>
+                <small>Fornisseur:DK-FRD-345</small>
+                <small>Inscrit le : 12/30/30 29:23</small>
+            </div>
+        </div>
+
+        <div class="d-flex col-md-9 flex-wrap">
+            <div style="width: 100%;display: flex;flex-wrap: wrap;gap: 10px;">
+                
+                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/commandes">
+                    <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20"
+                        height="20" />
+                    Commandes</button>
+                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/products">
+                    <img src="assets/img/icons/product.png" style="position: absolute;left: 10px;" alt="" width="20"
+                        height="20" />
+                        Produits</button>
+
+                    
+                
+                    <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid #FF9500;background-color: #FF9500;color: white;position: relative;border-radius: 4px;" routerLink="/providers/comptables">
+                        <img src="assets/img/icons/comptable.png" style="position: absolute;left: 10px;filter: invert();" alt="" width="20"
+                            height="20" />
+                        Comptable</button>
+                
+            </div>
+            
+        </div>
+        <div class="col-md-2 ms-auto d-flex justify-content-end align-items-start">
+            <!-- <img src="assets/img/icons/filtre.png" alt="" width="30" height="30" /> -->
+        </div>
+    </div>
+
+    <div class="w-full row" style="background-color: blue;">
+        <div class="col-12 d-flex flex-wrap  align-items-center">
+            
+            <div class="order-item" style="background-color: rgba(26, 26, 186, 0.472);border-radius: 20px 20px 0px 0px;margin-top: 10px;margin-bottom: 10px;color: white;padding-left: 20px;margin-right: 20px;">
+                <p class="label" style="color: white;">Prix de partenaire</p>
+                <small class="">Janvier 2024</small>
+                <p class="value" style="font-size: 2rem;color: white;">11 057 000  <span> <small>FCFA </small> </span></p>
+            </div>
+            <div class="order-item d-flex flex-wrap" style="background-color: rgba(162, 26, 186, 0.472);border-radius: 20px 20px 0px 0px;margin-top: 10px;margin-bottom: 10px;color: white;padding-left: 20px;">
+                <div class="order-item" >
+                    <p class="label" style="color: rgb(0, 255, 0);">SOLDE</p>
+                    <p class="value" style="font-size: 2rem;color: white;">11 057 000  <span> <small>FCFA </small> </span></p>
+                </div>
+                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                    <p class="label" style="color: red;">TOTAL A PAYER</p>
+                    <p class="value" style="font-size: 2rem;color: white;">23 000 <span> <small>FCFA </small> </span></p>
+                </div>
+            </div>
+            
+            <div class="order-item" >
+                <p class="label" style="color: white;">Total à payer</p>
+                <p class="value" style="font-size: 2rem;color: white;">11 057 000  <span> <small>FCFA </small> </span></p>
+            </div>
+            <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                <p class="label" style="color: white;">Commission Daymond</p>
+                <p class="value" style="font-size: 2rem;color: white;">11 057 000  <span> <small>FCFA </small> </span></p>
+            </div>
+           
+           
+        </div>
+    </div>
+    <div class="row d-flex p-3 box-1">
+        <div class="flex-wrap d-flex w-full">
+        <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
+           
+            <div class="nav " id="nav-tab" role="tablist">
+                <button class="nav-link active btn-round btn-border btn btn-primary" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Non soldé</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Soldé</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Recharge</button>
+                
+              </div>
+          
+
+        </div>
+        <div class="col-md-5 d-flex flex-wrap justify-content-end mb-3 mb-md-0 gap-3">
+          
+          
+           
+            <p><small class="">TOTAL A SAVOIR</small></p>
+            <p><small style="font-weight: bolder;">12 000 FCFA</small></p>
+        </div>
+        </div>
+        <div class="col-md-1 ms-auto d-flex justify-content-end">
+
+        </div>
+
+        
+    </div>
+    
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div class="d-flex gap-3 align-items-center">
+                <small class="w-auto min-w-auto">Aujourd'hui</small>
+                <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
+            </div>
+            <div class="row box-2">
+                <div class="col-12 d-flex flex-wrap order-row align-items-center">
+                    <div class="order-item d-flex align-items-center justify-content-start order-item-large col-6">
+                        <img class="product-image " src="assets/img/products/pducts-1.png" alt="Product Image"
+                            routerLink="commandes" />
+                        <div class="rounded-circle ">
+            
+                        </div>
+                        <div class="product-info">
+            
+                            <p class="value">Range cuisine moderne</p>
+                            <small>#DK-FRD-345</small>
+                            <small>Aujourd'hui à 29:23</small>
+                        </div>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Prix de partenaire</p>
+                        <p class="value">10 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Total à payer</p>
+                        <p class="value text-info">2 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Commission Daymond</p>
+                        <p class="value text-warning ">2 000 FCFA</p>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="d-flex gap-3 align-items-center ">
+                <small class="w-auto min-w-auto">Hier</small>
+                <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
+            </div>
+            <div class="row box-2">
+                <div class="col-12 d-flex flex-wrap order-row align-items-center">
+                    <div class="order-item d-flex align-items-center justify-content-start order-item-large col-6">
+                        <img class="product-image " src="assets/img/products/pducts-1.png" alt="Product Image"
+                            routerLink="commandes" />
+                        <div class="rounded-circle ">
+            
+                        </div>
+                        <div class="product-info">
+            
+                            <p class="value">Range cuisine moderne</p>
+                            <small>#DK-FRD-345</small>
+                            <small>Aujourd'hui à 29:23</small>
+                        </div>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Prix de partenaire</p>
+                        <p class="value">10 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Total à payer</p>
+                        <p class="value text-info">2 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Commission Daymond</p>
+                        <p class="value text-warning ">2 000 FCFA</p>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+        
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="d-flex gap-3 align-items-center">
+                <small class="w-auto min-w-auto">Aujourd'hui</small>
+                <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
+            </div>
+            <div class="row box-2">
+                <div class="col-12 d-flex flex-wrap order-row align-items-center">
+                    <div class="order-item d-flex align-items-center justify-content-start order-item-large col-6">
+                        <img class="product-image " src="assets/img/products/pducts-1.png" alt="Product Image"
+                            routerLink="commandes" />
+                        <div class="rounded-circle ">
+            
+                        </div>
+                        <div class="product-info">
+            
+                            <p class="value">Range cuisine moderne</p>
+                            <small>#DK-FRD-345</small>
+                            <small>Aujourd'hui à 29:23</small>
+                        </div>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Prix de partenaire</p>
+                        <p class="value text-success">10 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Total deja payer</p>
+                        <p class="value text-success">2 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Commission Daymond</p>
+                        <p class="value text-success">2 000 FCFA</p>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="d-flex gap-3 align-items-center ">
+                <small class="w-auto min-w-auto">Hier</small>
+                <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
+            </div>
+            <div class="row box-2">
+                <div class="col-12 d-flex flex-wrap order-row align-items-center">
+                    <div class="order-item d-flex align-items-center justify-content-start order-item-large col-6">
+                        <img class="product-image " src="assets/img/products/pducts-1.png" alt="Product Image"
+                            routerLink="commandes" />
+                        <div class="rounded-circle ">
+            
+                        </div>
+                        <div class="product-info">
+            
+                            <p class="value">Range cuisine moderne</p>
+                            <small>#DK-FRD-345</small>
+                            <small>Aujourd'hui à 29:23</small>
+                        </div>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Prix de partenaire</p>
+                        <p class="value text-success" >10 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label" >Total deja payer</p>
+                        <p class="value text-success" >2 000 FCFA</p>
+                    </div>
+                    <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
+                        <p class="label">Commission Daymond</p>
+                        <p class="value text-success" >2 000 FCFA</p>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+        
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">Recharge</div>
+    
+    </div>
+</div>
+

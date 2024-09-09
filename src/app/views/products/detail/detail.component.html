@@ -1,0 +1,311 @@
+<div class="container-fluid mt-5 p-3">
+    <!-- Button Group -->
+
+    <!-- <div class="row d-flex p-3 box-1">
+          <div class="flex-wrap d-flex w-full">
+          <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
+              <button class="btn btn-round btn-info w-auto d-flex text-white " >
+                 <small style="color: white;">Nouveau</small>
+                  </button>
+              <button class="btn btn-primary btn-border btn-round w-auto  me-3" >
+                  En stock
+              </button>
+              <button class="btn btn-primary btn-border btn-round w-auto" >
+                  Publier
+              </button>
+             
+              <button class="btn btn-primary btn-border btn-round w-auto  me-3" routerLink="/products/finish">
+                  Stock épuisé
+              </button>
+              <button class="btn btn-primary btn-border btn-round w-auto" routerLink="/products/Inactif">
+                  Inactifs
+              </button>
+             
+  
+          </div>
+          <div class="col-md-5 d-flex flex-wrap justify-content-end mb-3 mb-md-0">
+            
+            
+             
+              <button class="btn btn-round btn-warning w-auto d-flex text-white ">
+                 
+                  Ajouter un produit</button>
+          </div>
+          </div>
+          <div class="col-md-1 ms-auto d-flex justify-content-end">
+  
+          </div>
+      </div> -->
+    <div class="row d-flex p-3 box-1">
+        <div class="col-md-7 d-flex justify-content-between mb-3 mb-md-0">
+            <!-- <button class="btn btn-border btn-round w-50 me-3" style="background-color: blue;" routerLink="/products">
+          Nouveau
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/stock">
+          En stock
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/post">
+          Publier
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/finish">
+          Stock épuisé
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50" routerLink="/products/inactive">
+          Inactifs
+        </button> -->
+
+            <div class="nav gap-3" id="nav-tab" role="tablist">
+                <button style="padding-left: 40px;padding-right: 40px;"
+                    class="nav-link active btn-round btn-border btn btn-primary" routerLink="/products">Nouveau</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" routerLink="/products">En stock</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" routerLink="/products">Publier</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" routerLink="/products">Stock
+                    épuisé</button>
+                <button class="nav-link btn-round btn-border btn btn-primary" routerLink="/products">Inactifs</button>
+
+            </div>
+        </div>
+        <div class="col-md-3 ms-auto d-flex justify-content-end">
+            <button class="btn btn-primary btn-border btn-round btn-add" style="width: 70%" routerLink="/products/add">
+                Ajouter un produit
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-home">
+            <div class="pt-2 px-3">
+                <!-- Search and Filter -->
+                <div class="row mt-1 p-2">
+                    <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+                        style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
+                        <div class="col-4 d-flex align-items-center">
+                            <img src="assets/img/icons/fleche.png" style="margin-right: 10px;" alt="" width="10"
+                                height="10" routerLink="/orders/" />
+                            <p class="mb-0">Aperçu</p>
+                        </div>
+                        <div class="col-8 d-flex justify-content-end align-items-center">
+                            <div class="input-group me-2" style="width: 50%">
+
+                            </div>
+                            <div
+                                style="height: 50px;background-color: white;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.071);border-radius: 5px;padding-left: 10px;padding-right: 10px;padding-top: 3px;">
+                                <p class="card-price" style="font-size: 0.9rem;color: black;">27 JANVIER 2024 <br> <span
+                                        style="font-size: 0.7rem;color: gray;">10 H 24</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class=" mt-3" style="display: flex;gap: 10px;flex-wrap: wrap;">
+                    <div class="iamge1" style="width: 230px;height: 150px;">
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                            style="border-radius: 5px;" />
+                    </div>
+                    <div class="iamge1" style="width: 230px;height: 150px;">
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                            style="border-radius: 5px;" />
+                    </div>
+                    <div class="iamge1" style="width: 230px;height: 150px;">
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                            style="border-radius: 5px;" />
+                    </div>
+                    <div class="iamge1" style="width: 230px;height: 150px;">
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                            style="border-radius: 5px;" />
+                    </div>
+                    <div class="iamge1" style="width: 230px;height: 150px;">
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                            style="border-radius: 5px;" />
+                    </div>
+                </div>
+                <div class=" mt-3" style="display: flex;gap: 10px;flex-wrap: wrap;">
+                    <div
+                        style="width: 30%;min-width: 350px;height: 250px;border: 1px solid #C4C4C4;border-radius: 10px;overflow-y: scroll;">
+                        <p class="mb-0"
+                            style="font-size: 1rem;padding-left: 10px;padding-right: 10px;color: black;font-weight: bolder;">
+                            Ordinateur portable, Lenovo 8 giga de
+                            RAM / 500 giga de 10 dur</p>
+                        <p class="mb-0"
+                            style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;padding-top: 30px;">
+                            Prix d'en gros</p>
+                        <p class="mb-0" style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;">
+                            10.100 fcfa</p>
+                        <p class="mb-0"
+                            style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;padding-top: 30px;">
+                            Stocks 1000 pieces</p>
+                        <p class="mb-0"
+                            style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;font-weight: bolder;padding-top: 10px;">
+                            N°234567890</p>
+                    </div>
+                    <div
+                        style="width: 30%;min-width: 350px;height: 250px;border: 1px solid #C4C4C4;border-radius: 10px;overflow-y: scroll;">
+                        <p class="mb-0" style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;">
+                            Caracteristique</p>
+                        <p style="font-size: 0.8rem;padding-left: 10px;padding-right: 10px;">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Labore cumque placeat consequatur eaque voluptas similique,
+                            consectetur suscipit dolores repellat illum? Aliquam, molestiae voluptatibus maxime
+                            asperiores modi voluptatem culpa nisi doloribus!Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Labore cumque placeat consequatur eaque voluptas similique, consectetur
+                            suscipit dolores repellat illum? Aliquam, molestiae voluptatibus maxime asperiores modi
+                            voluptatem culpa nisi doloribusLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Labore cumque placeat consequatur eaque voluptas similique, consectetur suscipit dolores
+                            repellat illum? Aliquam, molestiae voluptatibus maxime asperiores modi voluptatem culpa nisi
+                            doloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque placeat
+                            consequatur eaque voluptas similique, consectetur suscipit dolores repellat illum? Aliquam,
+                            molestiae voluptatibus maxime asperiores modi voluptatem culpa nisi doloribusLorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Labore cumque placeat consequatur eaque
+                            voluptas similique, consectetur suscipit dolores repellat illum? Aliquam, molestiae
+                            voluptatibus maxime asperiores modi voluptatem culpa nisi doloribus</p>
+                    </div>
+                    <div
+                        style="width: 30%;min-width: 350px;height: 250px;border: 1px solid #C4C4C4;border-radius: 10px;overflow-y: scroll;">
+                        <p class="mb-0" style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;">
+                            État du produit : <span style="color: orange;"> Neuf</span></p>
+                        <div style="width: 100%;height: 30px;display: flex;align-items: center;padding-right: 10px;">
+                            <div style="width: 40%;height: 10px;">
+                                <p class="mb-0"
+                                    style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;">
+                                    Taille du produit </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #C4C4C4;width: 60%;height: 10px;">
+
+                            </div>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;align-items: center;padding-right: 10px;flex-wrap: wrap;gap: 10px;padding-top: 10px;padding-left: 10px;">
+                            <p
+                                style="background-color: orange;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+                            <p
+                                style="background-color: #dedede;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(151, 151, 151);">
+                                14 Pouces</p>
+
+                        </div>
+                        <div style="width: 100%;height: 30px;display: flex;align-items: center;padding-right: 10px;">
+                            <div style="width: 40%;height: 10px;">
+                                <p class="mb-0"
+                                    style="font-size: 0.9rem;padding-left: 10px;padding-right: 10px;color: black;">
+                                    Couleur du produit </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #C4C4C4;width: 60%;height: 10px;">
+
+                            </div>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;align-items: center;padding-right: 10px;flex-wrap: wrap;gap: 10px;padding-top: 10px;padding-left: 10px;">
+                            <p
+                                style="background-color: black;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Noir</p>
+                            <p
+                                style="background-color: blue;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Bleu</p>
+                            <p
+                                style="background-color: red;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Rouge</p>
+                            <p
+                                style="background-color: orange;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Orange</p>
+                            <p
+                                style="background-color: pink;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Rose</p>
+                            <p
+                                style="background-color: rgb(140, 0, 147);padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Violet</p>
+                            <p
+                                style="background-color: green;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Vert</p>
+                            <p
+                                style="background-color: yellow;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(123, 123, 123);">
+                                Jaune</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="forue">
+    <div class="forue1">
+        <div class="forue11">
+            <small style="font-weight: bolder;font-size: 0.7rem;">Lamine</small>
+            <p style="font-size: 0.5rem;">Il y'a 4 minutes</p>
+        </div>
+        <div class="forue112">
+            <div class="cersle">
+
+            </div>
+            <div class="cersle2">
+                <small style="font-weight: bolder;font-size: 0.7rem;">Lamine </small>
+
+                <p style="font-size: 0.5rem;">Il y'a 4 minutes <br>ghjk</p>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="forue2">
+        <!-- Default dropup button -->
+        <div class="dropdown" >
+            <select class="btn form-select " style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;" aria-label="Default select example">
+    
+              <option value="1">
+                <div class="dropdown-item btn btn-border-custom w-auto"
+                  style="background-color: red;color: white;margin-top: 5px;border: none;">Marquer </div>
+              </option>
+              
+              <option value="2">
+                <div class="dropdown-item btn btn-border-custom w-auto"
+                  style="background-color: orange;color: white;margin-top: 5px;">Modifier les infos</div>
+              </option>
+              <option value="3">
+                <div class="dropdown-item btn btn-border-custom w-auto"
+                  style="background-color: red;color: white;margin-top: 5px;border: none;">Non conforme</div>
+              </option>
+            </select>
+          </div>
+      
+        
+        <button style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;"   routerLink="/products/add">
+            Mettre en stock
+        </button>
+        <button style="background-color: orange;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: white;"   routerLink="/products/add">
+            Publier
+        </button>
+    </div>
+</div>
