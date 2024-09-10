@@ -1,1 +1,386 @@
-<p>add works!</p>
+<div class="container-fluid mt-5 p-3">
+    <!-- Button Group -->
+
+    <!-- <div class="row d-flex p-3 box-1">
+          <div class="flex-wrap d-flex w-full">
+          <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
+              <button class="btn btn-round btn-info w-auto d-flex text-white " >
+                 <small style="color: white;">Nouveau</small>
+                  </button>
+              <button class="btn btn-primary btn-border btn-round w-auto  me-3" >
+                  En stock
+              </button>
+              <button class="btn btn-primary btn-border btn-round w-auto" >
+                  Publier
+              </button>
+             
+              <button class="btn btn-primary btn-border btn-round w-auto  me-3" routerLink="/products/finish">
+                  Stock épuisé
+              </button>
+              <button class="btn btn-primary btn-border btn-round w-auto" routerLink="/products/Inactif">
+                  Inactifs
+              </button>
+             
+  
+          </div>
+          <div class="col-md-5 d-flex flex-wrap justify-content-end mb-3 mb-md-0">
+            
+            
+             
+              <button class="btn btn-round btn-warning w-auto d-flex text-white ">
+                 
+                  Ajouter un produit</button>
+          </div>
+          </div>
+          <div class="col-md-1 ms-auto d-flex justify-content-end">
+  
+          </div>
+      </div> -->
+    <div class="row d-flex p-3 box-1">
+        <div class="col-md-7 d-flex justify-content-between mb-3 mb-md-0">
+            <!-- <button class="btn btn-border btn-round w-50 me-3" style="background-color: blue;" routerLink="/products">
+          Nouveau
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/stock">
+          En stock
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/post">
+          Publier
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/products/finish">
+          Stock épuisé
+        </button>
+        <button class="btn btn-primary btn-border btn-round w-50" routerLink="/products/inactive">
+          Inactifs
+        </button> -->
+        <div class="col-md-12 d-flex justify-content-start align-items-center gap-3 flex-wrap" >
+            <div class="d-flex align-items-center" style="min-width: 190px;">
+                <img src="assets/img/icons/fleche.png" style="margin-right: 10px;" alt="" width="10"
+                    height="10" routerLink="/orders/" />
+                <p class="mb-0">Publier un produit</p>
+            </div>
+            <div class="d-flex align-items-center" style="background-color: white;padding-left: 10px;padding-right: 15px;border: 1px solid #ccc;border-radius: 7px;min-width: 190px;">
+                <img src="assets/img/logoAdm.png" style="margin-right: 10px;" alt="" width="30"
+                    height="30" />
+                <p class="mb-0" style="font-size: 0.8rem;color: black;">BOUTIQUE LENOVO <br><span style="font-size: 0.8rem;color: gray;">Fournisseur : 26789</span></p>
+            </div>
+            <div class="d-flex align-items-center" style="background-color: white;padding-left: 20px;padding-right: 10px;border: 1px solid #FF9500;border-radius: 7px;min-width: 100px;padding-top: 10px;padding-bottom: 10px;">
+               
+                <p class="mb-0" style="font-size: 0.8rem;color: #FF9500;">Plus recent </p>
+            </div>
+            <div class="d-flex align-items-center" style="background-color: white;padding-left: 20px;padding-right: 10px;border: 1px solid #FF9500;border-radius: 7px;min-width: 50px;padding-top: 10px;padding-bottom: 10px;">
+               
+                <img src="assets/img/etoile.png" style="margin-right: 10px;" alt="" width="20"
+                    height="20"  />
+            </div>
+           
+
+        </div>
+
+        </div>
+        <div class="col-md-3 ms-auto d-flex justify-content-end align-items-center gap-3" >
+
+            
+            <button  style="width: 70%;border: none;background-color: white;color: gray;" >
+                Sauvegarder
+            </button>
+            <button class="btn btn-primary btn-border btn-round btn-add" style="width: 70%;color: #FF9500;" routerLink="/products/add">
+                PUBLIER
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="pt-2 px-3">
+        
+
+        <!-- Cards -->
+        <div class="row mt-3 ">
+            <div class="col-md-8 col-sm-6 mb-4" style="min-width: 700px;height: auto;background-color: white;" >
+                <p class="mb-0" >Code de produit #hjfjdslls983</p>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Titre</label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Marque</label>
+                       
+                    </div>
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2" style="width: 100%;height: auto;">
+                        
+                        <!-- <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" > -->
+                        <textarea name="" id="titre1" style="height: 300px;width: 100%;border: 1px solid #ccc;border-radius: 5px;padding-left: 10px;resize: none;"></textarea>
+                        <label id="titre">Information du produit</label>
+                       
+                    </div>
+                   
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Etat du produit</label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Quantité en stock</label>
+                       
+                    </div>
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2" style="height: auto;">
+                        
+                        <div  id="titre1" style="height: 130px;width: 100%;border: 1px solid #ccc;border-radius: 5px;padding-left: 10px;padding-top: 40px;" >
+                            <p style="border: 1px solid #ccc;width: 100px;"> <span style="background-color: white;padding: 5px;border-right: 1px solid #ccc;padding-right: 10px;">12</span> <span style="padding-left: 5px;background-color: rgb(0, 145, 255);padding: 5px;padding-right: 11px;color: white;">Pouces</span></p>
+                            <p style="border: 1px solid #ccc;width: 40px;"><span style="padding-left: 5px;background-color: rgb(0, 145, 255);padding: 5px;padding-right: 12px;color: white;">XS</span></p>
+                        </div>
+                        <label id="titre" style="display: flex;justify-content: space-between;width: 100%;padding-right: 20px;"> <span >Taille du produit</span><span style="color: rgb(0, 217, 255);font-weight: bolder;font-size: 1.5rem;">+</span></label>
+                       
+                    </div>
+                    <div id="titre2" style="height: auto;">
+                        
+                        <div  id="titre1" style="height: 130px;width: 100%;border: 1px solid #ccc;border-radius: 5px;padding-left: 10px;display: flex;align-items: center;padding-right: 10px;flex-wrap: wrap;gap: 10px;padding-top: 40px;" >
+                            <p
+                                style="background-color: black;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Noir</p>
+                            <p
+                                style="background-color: blue;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Bleu</p>
+                            <p
+                                style="background-color: red;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Rouge</p>
+                            <p
+                                style="background-color: orange;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Orange</p>
+                            <p
+                                style="background-color: pink;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Rose</p>
+                            <p
+                                style="background-color: rgb(140, 0, 147);padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Violet</p>
+                            <p
+                                style="background-color: green;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: white;">
+                                Vert</p>
+                            <p
+                                style="background-color: yellow;padding: 2px 10px 2px 10px;border-radius: 20px;font-size: 0.5rem;color: rgb(123, 123, 123);">
+                                Jaune</p>
+                        </div>
+                       
+
+                        <label id="titre" style="display: flex;justify-content: space-between;width: 100%;padding-right: 20px;"> <span >Couleur du produit</span><span style="color: rgb(0, 217, 255);font-weight: bolder;font-size: 1.5rem;">+</span></label>
+                       
+                    </div>
+                    
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Prix officiel du marché</label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Prix partenaire Daymond</label>
+                       
+                    </div>
+
+                </div>
+                <div style="width: 100%;gap: 10px;display: flex;height: 50px;align-items: center;padding-top: 20px;">
+                    <div style="width: 50%;background-color: rgb(234, 234, 234);height: 1px;">
+                        
+                    </div>
+                    <p style="font-size: 0.7rem;min-width: 100px;display: flex;align-items: center;justify-content: center;padding-top: 10px;color: rgb(194, 194, 194);">Ligne 2</p>
+                    <div style="width: 50%;background-color: rgb(234, 234, 234);height: 1px;">
+                        
+                    </div>
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Sous titre</label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">LENOVO</label>
+                       
+                    </div>
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Catégorie </label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Sous catégorie</label>
+                       
+                    </div>
+
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;padding-top: 10px;">
+                    <div id="titre2">
+                        
+                        <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Prix grassiste unitaire</label>
+                       
+                    </div>
+                    <div id="titre2">
+                        
+                        <!-- <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                        <label id="titre">Prix réduit</label> -->
+
+                        <div class="input-group mb-3">
+                            <input type="text" id="titre1" class="form-control" style="border: 1px solid #ccc;" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <label id="titre">Prix réduit</label>
+                            <div class="input-group-append" >
+                              <span class="input-group-text" id="basic-addon2" style="color: red;">- 10 %</span>
+                            </div>
+                          </div>
+                          
+                    </div>
+
+                </div>
+                <div style="width: 100%;background-color: white;padding-top: 10px;padding-top: 5px;border: 1px solid #f0f0f0;margin-top: 20px;padding: 5px;border-radius: 5px;padding-bottom: 15px;">
+                    <p style="width: 100px;">Prix de vente </p>
+                    <div style="display: flex;width: 100%;gap: 10px;">
+                       
+                        <div id="titre2">
+                            
+                            <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                            <label id="titre">De :</label>
+                        
+                        </div>
+                        <div id="titre2">
+                            
+                            <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                            <label id="titre">A :</label>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;background-color: white;gap: 10px;display: flex;">
+                    <div id="titre2" style="height: auto;">
+                        
+                        <div  id="titre1" style="height: 150px;width: 100%;border: 1px solid #ccc;border-radius: 5px;padding-left: 10px;display: flex;align-items: center;padding-right: 10px;flex-wrap: wrap;gap: 10px;padding-bottom: 10px;" >
+                            <div class="titre212" >
+                                <p >Offre achat pour soit  
+                                </p>
+
+                            </div>
+                            <div class="titre212" style="gap: 10px;">
+                                
+
+                                <button style="width: 50%;border: 1px solid #ccc;padding: 7px;background-color: white;">12 000 FCFA</button>
+                                <p style="color: red;">- 18 %
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="titre2" style="height: auto;">
+                        
+                        <div  id="titre1" style="height: 150px;width: 100%;border: 1px solid #ccc;border-radius: 5px;padding-left: 10px;display: flex;align-items: center;padding-right: 10px;flex-wrap: wrap;gap: 10px;padding-bottom: 10px;" >
+                            <div class="titre212" >
+                                <p >Livraison</p>
+                                <button style="width: 50%;border: 1px solid #ccc;padding: 7px;">Localisation</button>
+                            </div>
+                            <div class="titre212" style="gap: 10px;">
+                                
+
+                                <button style="width: 50%;border: 1px solid #ccc;padding: 7px;background-color: white;">A Yamoussoukrou</button>
+                                <button style="width: 50%;border: 1px solid #ccc;padding: 7px;background-color: white;">Hors Yamoussoukrou</button>
+                            </div>
+                        </div>
+                       
+                       
+                       
+                    </div>
+                    
+
+                </div>
+                <div class="input-group mb-3" style="box-shadow: none;padding-top: 20px;">
+                    <input type="text" class="form-control" placeholder="Lien de la video du produit" aria-label="Recipient's username" aria-describedby="basic-addon2"style="border: 1px solid #ccc;border-radius: 5px;box-shadow: none;padding-top: 10px;">
+                    <div class="input-group-append">
+                      <button  type="button" style="padding-left: 20px;padding-right: 20px;border: 1px solid #ccc;margin-top: 20px;padding-top: 7px;padding-bottom: 7px;margin-right: 2px;background-color: rgb(0, 106, 255);color: white;border-radius: 3px;border: none;">Coller</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4"  style="min-width: 300px;background-color: rgba(244, 244, 244, 0.743);padding: 10px;border-radius: 10px;padding-bottom: 10px;" >
+                <input type="file" name="" id="download_image" style="display: none;">
+
+                <label for="download_image" class="images1" style="width: 100%;height: 250px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    
+                
+                
+                <img src="assets/img/downimage.png" style="margin-right: 10px;" alt="" width="50"
+                height="50"  />
+                <p style="text-align: center;">Image principale <br>8 minimum</p>
+
+                </label>
+                <div class="images1" style="width: 100%;border-radius: 10px;display: flex;align-items: center;justify-content: center;margin-top: 10px;gap: 10px;flex-wrap: wrap;">
+                    
+
+                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    
+
+                       
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                        style="border-radius: 5px;" />
+                    </div>
+                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    
+
+                       
+        
+                    </div>
+                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    
+
+                       
+                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                        style="border-radius: 5px;" />
+                    </div>
+                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    
+
+                       
+        
+                    </div>
+
+                </div>
+              
+               
+                
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>

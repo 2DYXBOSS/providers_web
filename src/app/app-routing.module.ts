@@ -8,6 +8,10 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
+    path: 'auth',
+    loadChildren: () => import('./views/auth/auth.module').then(m => m.AuthModule)
+  },
+  {
     path: 'orders',
     loadChildren: () => import('./views/order/order.module').then(m => m.OrderModule)
   },

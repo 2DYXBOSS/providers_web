@@ -115,14 +115,43 @@
     
 }
 .barcash{
-    height: 30px;
+    height: 5px;
     width: 100%;
-    background-color: green;
+    background-color:  #25BA4F;
+;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.barcas1{
+    height: 100%;
+    width: 25%;
+    background-color:  #25BA4F;
+;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.indofcash1{
+    height: 100%;
+    width: 25%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; */
 }
 .indofcash{
     height: 90px;
     width: 100%;
-    background-color: yellow;
+    display: flex;
+    gap: 1px;
+   
+    background-color: white;
 }
 
 /* le tire */
@@ -143,7 +172,7 @@
     .comman13{
         height: 100%;
         width: 100%;
-        background-color: red;
+        background-color: white;
         border-radius: 10px;
     }
 

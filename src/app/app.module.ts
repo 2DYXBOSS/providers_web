@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { SharedModule } from './shared/shared.module';
 import { RouterOutlet } from '@angular/router';
+import { LoginComponent } from './views/login/login.component';
 
 
 
@@ -13,6 +14,7 @@ import { RouterOutlet } from '@angular/router';
   declarations: [
     AppComponent,
     DashboardComponent,
+    LoginComponent,
 
    
   ],
