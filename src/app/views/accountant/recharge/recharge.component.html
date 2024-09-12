@@ -90,17 +90,20 @@
     </div>
     <div class="row d-flex p-3 box-1">
         <div class="flex-wrap d-flex w-full">
-        <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0">
-            <button class="btn btn-primary btn-border btn-round w-auto me-3" routerLink="/accountant/">
+        <div class="col-md-7 d-flex flex-wrap justify-content-start mb-3 mb-md-0 gap-3">
+           
+            
+            <button style="background-color: white;width: auto;padding-left: 40px;padding-right: 40px;color: black;border: 1px solid #ccc;border-radius: 30px;"   routerLink="/accountant/">
                 Non soldé
             </button>
-            <button class="btn btn-primary btn-border btn-round w-auto  me-3" routerLink="/accountant/solde">
+            <button style="background-color: white;width: auto;padding-left: 40px;padding-right: 40px;color: black;border: 1px solid #ccc;border-radius: 30px;"   routerLink="/accountant/solde">
                 Soldé
             </button>
-            <button class="btn btn-primary btn-border btn-round w-auto" routerLink="/accountant/recharge">
+         
+            <button style="background-color: #3688FA;width: auto;padding-left: 40px;padding-right: 40px;color: white;border: 1px solid #ccc;border-radius: 30px;"   routerLink="/accountant/recharge">
                 Recharge
             </button>
-           
+            
            
 
         </div>
@@ -110,7 +113,7 @@
             <p><small class="">TOTAL A SAVOIR</small></p>
             <p><small style="font-weight: bolder;">12 000 FCFA</small></p>
             <div style="border-left: 1px solid #ccc;padding-left: 20px;">
-                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid #FFA500;background-color: #FFA500;color: white;position: relative;border-radius: 4px;">
+                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid #FFA500;background-color: #FFA500;color: white;position: relative;border-radius: 4px;" data-bs-toggle="modal" data-bs-target="#afficherModal">
                    
                     SOLDER</button>
             </div>
@@ -266,3 +269,297 @@
   
   
   </div>
+
+
+
+<!-- 1 -->
+<div class="modal fade" id="afficherModal" tabindex="-1" aria-labelledby="afficherModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+      </div>
+    </div>
+  
+  
+    <div class="fixed_fourn">
+      <div class="fixed_fourn1">
+  
+  
+        <div class="formu_fourn" style="height: 550px;">
+          <div class="nominf" style="background-color: white;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+            <p style="padding-top: 10px;text-align: center;text-transform: uppercase;color: black;font-weight: bolder;">selectionner un compte</p>
+            <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+              style="position: absolute;left: 20px;" /> -->
+          </div>
+          <div class="nominf1">
+            
+            <div class="nominf12" >
+                <p style="padding-top: 10px;"> <img style="margin-right: 10px;" height="20px" width="20px" src="assets/img/Orangemoney.png" alt="Product Image"
+                    />wave </p>
+                <p style="padding-top: 10px;">07 59 02 85 45</p>
+              </div>
+            <div class="nominf12" >
+                <p style="padding-top: 10px;"> <img style="margin-right: 10px;" height="20px" width="20px" src="assets/img/Orangemoney.png" alt="Product Image"
+                    />mtn </p>
+                <p style="padding-top: 10px;">07 59 02 85 45</p>
+              </div>
+            <div class="nominf12" >
+                <p style="padding-top: 10px;"> <img style="margin-right: 10px;" height="20px" width="20px" src="assets/img/Orangemoney.png" alt="Product Image"
+                    />orange </p>
+                <p style="padding-top: 10px;">07 59 02 85 45</p>
+              </div>
+           
+            
+        </div>
+        <div style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+
+       
+        <button style="width: 30%;min-width: 200px;height: 40px;border: 1px solid blue;background-color: blue;color: white;border-radius: 4px;margin:0 auto;margin-top: 200px;" data-bs-toggle="modal" data-bs-target="#csoldeModal">
+               
+            Validé</button>
+
+        </div>
+          <div
+            style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+  
+            <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  
+  </div>
+
+<!-- 2 -->
+<div class="modal fade" id="csoldeModal" tabindex="-1" aria-labelledby="csoldeModalLabel" aria-hidden="true">
+
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+      </div>
+    
+    
+      <div class="fixed_fourn">
+        <div class="fixed_fourn1">
+    
+    
+          <div class="formu_fourn" style="height: 550px;">
+            <div class="nominf" style="background-color: blue;border-top-left-radius: 10px;border-top-right-radius: 10px;height: 100px;display: flex;justify-content: center;align-items: center;">
+              <p style="padding-top: 10px;text-align: center;text-transform: uppercase;color: white;font-weight: bolder;background: rgba(36, 116, 255, 0.395);padding-left: 50px;padding-right: 50px;padding-bottom: 10px;">Soldes actuel: 55 000 CFA </p>
+              <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+                style="position: absolute;left: 20px;" /> -->
+            </div>
+            <div class="nominf1">
+              
+              <div class="nominf12" >
+                  <p style="padding-top: 10px;"> <img style="margin-right: 10px;" height="20px" width="20px" src="assets/img/Orangemoney.png" alt="Product Image"
+                      />wave </p>
+                  <p style="padding-top: 10px;">07 59 02 85 45</p>
+                </div>
+              <div class="nominf12" style="border: none;background-color: transparent;padding: 0;">
+                <div id="titre2">
+                        
+                    <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;" >
+                    <label id="titre">Montant a recharger</label>
+                   
+                </div>
+                </div>
+                
+             
+              
+          </div>
+          <div style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+  
+         
+          <button style="width: 30%;min-width: 200px;height: 40px;border: 1px solid blue;background-color: blue;color: white;border-radius: 4px;margin:0 auto;margin-top: 200px;" data-bs-toggle="modal" data-bs-target="#compteModal">
+                 
+            RECHARGER</button>
+  
+          </div>
+            <div
+              style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+    
+              <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+  
+  </div>
+
+<!-- 3 -->
+<div class="modal fade" id="compteModal" tabindex="-1" aria-labelledby="compteModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+    
+    
+    <div class="fixed_fourn">
+        <div class="fixed_fourn1">
+    
+    
+            <div class="formu_fourn" style="height: 550px;">
+                <div class="nominf" style="background-color: rgba(242, 240, 240, 0.585);border-top-left-radius: 10px;border-top-right-radius: 10px;height: 150px;display: flex;justify-content: center;align-items: center;padding-left: 20px;padding-right: 20px;">
+                    <div class="nominf12" style="border: none;background-color: transparent;padding: 0;">
+                        <p style="padding-top: 10px;"> <img style="margin-right: 10px;" height="60px" src="assets/img/Orangemoney.png" alt="Product Image"
+                            /> </p>
+
+                        <div>
+                            <p><small style="font-size: 1.1rem;font-weight: bolder;color: black;">orange</small> <br><small style="color: blue;">9.900 FCFA </small></p>
+
+                            <small style="font-size: 0.7rem;">MONTANT A RECHARGER</small>
+                        </div>
+
+                    </div>
+                        <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+                    style="position: absolute;left: 20px;" /> -->
+                </div>
+                <div class="nominf1">
+                
+                
+                    <div class="nominf12" style="border: none;background-color: transparent;padding: 0;">
+                        <div id="titre2">
+                                <p style="text-align: center;color: black;font-size: 0.8rem;">Pour confirmer la transaction tape <span style="color: orange;">#144*82#</span> 
+                                    pour générer un code temporaire
+                                    </p>
+                            <input type="text" id="titre1" style="height: 100%;width: 100%;border: 1px solid #ccc;border-radius: 5px;height: 40px;padding-left: 10px;text-align: center;font-size: 0.7rem;" placeholder="Saisir le code temporaire ici">
+
+                        
+                        </div>
+                    </div>
+                    
+                
+                
+                </div>
+                <div style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+    
+            
+                    <button style="width: 30%;min-width: 200px;height: 40px;border: 1px solid blue;background-color: blue;color: white;border-radius: 4px;margin:0 auto;margin-top: 200px;" data-bs-toggle="modal" data-bs-target="#termineModal">
+                            
+                        RECHARGER</button>
+    
+                    </div>
+                        <div
+                        style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+                
+                            <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </div>
+  
+  
+    </div>
+<!-- 4 -->
+<div class="modal fade" id="termineModal" tabindex="-1" aria-labelledby="termineModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+    
+    
+    <div class="fixed_fourn">
+        <div class="fixed_fourn1">
+    
+    
+            <div class="formu_fourn" style="height: 350px;">
+               
+                <div class="nominf1">
+                
+                
+                    <div class="nominf12" style="border: none;background-color: transparent;padding: 0;">
+                        <div id="titre2">
+                                <p style="text-align: center;color: green;font-size: 0.9rem;">Retrait en cours
+                                    </p>
+                                <p style="text-align: center;color: black;font-size: 0.9rem;">votre retraite d'argent est en cours 
+                                    d'execution 
+                                    </p>
+                            
+                        
+                        </div>
+                    </div>
+                    
+                
+                
+                </div>
+                <div style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+    
+            
+                    <button style="width: 30%;min-width: 200px;height: 40px;border: 1px solid blue;background-color: blue;color: white;border-radius: 4px;margin:0 auto;margin-top: 200px;" data-bs-dismiss="modal" aria-label="Close">
+                            
+                        OK</button>
+    
+                    </div>
+                        <div
+                        style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+                
+                            <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </div>
+  
+  
+    </div>

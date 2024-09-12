@@ -380,3 +380,35 @@
 
 
 
+.titre212{
+    height: 50px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+#titre2{
+    /* width: 50%; */
+    width: 500px;
+    height: 40px;
+    position: relative;
+    margin-top: 10px;
+}
+#titre2 label{
+    top: 10px;
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+}
+#titre1:focus ~ #titre{
+    top: -11px;
+    background-color: white;
+    left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #FF9500;
+    z-index: 99999;
+
+}
