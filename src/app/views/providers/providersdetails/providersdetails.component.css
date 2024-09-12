@@ -219,6 +219,24 @@
         margin-top: 20px;
         border-radius: 10px;
     }
+    .formu_fourng{
+        height: 750px;
+        width: 95%;
+        max-width: 500px;
+        min-width: 400px;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .formu_fourngc{
+        height:550px;
+        width: 95%;
+        max-width: 500px;
+        min-width: 400px;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
 
 
 
@@ -254,6 +272,24 @@
         margin-top: 50px;
         border-radius: 10px;
     }
+    .formu_fourng{
+        height: 750px;
+        width: 95%;
+        max-width: 500px;
+        min-width: 400px;
+        background-color: white;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    .formu_fourngc{
+        height: 550px;
+        width: 95%;
+        max-width: 500px;
+        min-width: 400px;
+        background-color: white;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
 
 }
 
@@ -263,10 +299,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     border-bottom: 1px solid gainsboro;
-    position: relative;
-    padding-left: 50px;
+    /* position: relative; */
+    /* padding-left: 50px; */
 }
 .nominf1{
     padding-top: 20px;

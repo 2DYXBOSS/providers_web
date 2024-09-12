@@ -148,10 +148,10 @@
         <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
     </div>
     <div class="row box-2 m-3">
-        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="order-item d-flex align-items-center order-item-large">
                 <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                    routerLink="commandes" />
+                    />
                 <div class="rounded-circle ">
 
                 </div>
@@ -192,10 +192,10 @@
         <div style="height: 1px;border-top: 1px solid rgba(128, 128, 128, 0.403);width: 100%;"></div>
     </div>
     <div class="row box-2 m-3">
-        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+        <div class="col-12 d-flex flex-wrap order-row align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="order-item d-flex align-items-center order-item-large">
                 <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                    routerLink="commandes" />
+                    />
                 <div class="rounded-circle ">
 
                 </div>
@@ -233,9 +233,9 @@
     </div>
     <div class="row box-2 m-3">
         <div class="col-12 d-flex flex-wrap order-row align-items-center">
-            <div class="order-item d-flex align-items-center justify-content-start order-item-large col-4">
+            <div class="order-item d-flex align-items-center justify-content-start order-item-large col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img class="product-image " src="assets/img/products/pducts-1.png" alt="Product Image"
-                    routerLink="commandes" />
+                    />
                 <div class="rounded-circle ">
     
                 </div>
@@ -270,3 +270,103 @@
     </div>
 </div>
 
+
+<!-- Info solde -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+      </div>
+    </div>
+  
+  
+    <div class="fixed_fourn">
+      <div class="fixed_fourn1">
+  
+  
+        <div class="formu_fourn" style="height: 600px;">
+          <div class="nominf" style="background-color: rgb(255, 188, 246);border-top-left-radius: 10px;border-top-right-radius: 10px;">
+            <p style="padding-top: 10px;text-align: center;text-transform: uppercase;color: rgb(212, 41, 218);font-weight: bolder;">NON SOLDÉS</p>
+            <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+              style="position: absolute;left: 20px;" /> -->
+          </div>
+          <div class="nominf1">
+            <div class="col-12 d-flex flex-wrap  align-items-center">
+                <div class="order-item d-flex align-items-center justify-content-start order-item-large col-6" >
+                    <img  src="assets/img/products/pducts-1.png" alt="Product Image"
+                        height="70px" width="70px" />
+                    <div class="rounded-circle ">
+        
+                    </div>
+                    <div class="product-info" style="margin-left: 10px;">
+        
+                        <p style="color: black;">Range cuisine moderne</p>
+                        <small>Stock 91 / 110  Pieces</small>
+                        <small>#DK-FRD-345</small>
+                       
+                    </div>
+                </div>
+                <div class="order-item" style="padding-left: 30px;display: flex;justify-content: end;align-items: end;padding-top: 50px;">
+                    <p style="text-align: end;font-size: 0.8rem;">INFORMATION GENERALE</p>
+
+                </div>
+               
+               
+               
+            </div>
+            <div class="nominf12" style=" border: none;border-left: 1px solid gainsboro;background-color: transparent;">
+              <p style="padding-top: 10px;color: black;">Prix partenaire  <br ><p style="font-weight: bolder;color: black;">10 000  FCFA</p> </p>
+
+            </div>
+            <div class="nominf12" style=" border: none;border-left: 1px solid gainsboro;background-color: transparent;">
+              <p style="padding-top: 10px;color: black;">Prix de vente  <br ><p style="font-weight: bolder;">10 000  FCFA</p> </p>
+
+            </div>
+            <div class="nominf12" style=" border: none;border-left: 1px solid gainsboro;background-color: transparent;">
+              <p style="padding-top: 10px;color: black;">Frais de livraison  <br ><p style="font-weight: bolder;">10 000  FCFA</p> </p>
+
+            </div>
+            <div class="nominf12" style=" border: none;border-left: 1px solid gainsboro;background-color: transparent;">
+              <p style="padding-top: 10px;color: black;">Total payé  <br ><p style="font-weight: bolder;">10 000  FCFA</p> </p>
+
+            </div>
+            <div class="nominf12" style=" border: none;border-left: 1px solid gainsboro;background-color: transparent;">
+              <p style="padding-top: 10px;color: black;">Commission Daymond   <br ><p style="font-weight: bolder;color: orange;">10 000  FCFA</p> </p>
+
+            
+           
+          </div>
+        </div>
+        <div style="width: 100%;display: flex;justify-content: center;flex-direction: column;">
+
+       
+        <button style="width: 30%;min-width: 200px;height: 40px;border: 1px solid #FFA500;background-color: #FFA500;color: white;border-radius: 4px;margin:0 auto;margin-top: 20px;">
+               
+            SOLDER</button>
+            <small style="text-align: center;padding-top: 10px;">Solde insuffisant</small>
+        </div>
+          <div
+            style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+  
+            <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  
+  </div>

@@ -1,147 +1,150 @@
 <div class="container-fluid mt-5 p-3">
-    <!-- Button Group -->
+  <!-- Button Group -->
 
-    <div class=" ms-auto d-flex justify-content-between align-items-center w-full">
+  <div class=" ms-auto d-flex justify-content-between align-items-center w-full">
 
-        <div class="d-flex gap-3 align-items-start ">
-            <img src="assets/img/icons/fleche.png" style="margin-top: 8px;" alt="" width="10" height="10" />
-            <p>Fornisseur </p>
-        </div>
-
-        <a routerLink="/parameter"><img src="assets/img/icons/parametre.png" alt="" width="20" height="20" /></a>
-
+    <div class="d-flex gap-3 align-items-start ">
+      <img src="assets/img/icons/fleche.png" style="margin-top: 8px;" alt="" width="10" height="10" />
+      <p>Fornisseur </p>
     </div>
-    <div class="col-12 d-flex flex-wrap  align-items-center">
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    <a routerLink="/parameter"><img src="assets/img/icons/parametre.png" alt="" width="20" height="20" /></a>
+
+  </div>
+  <div class="col-12 d-flex flex-wrap  align-items-center">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Valider ma commande
           </button> -->
-        <button type="button" style="border: none;background-color: transparent;" class="order-item d-flex align-items-center justify-content-start order-item-large col-md-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" style="border: none;background-color: transparent;"
+      class="order-item d-flex align-items-center justify-content-start order-item-large col-md-2 "
+      >
 
 
-            <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                 />
-            <div class="rounded-circle ">
+      <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image" />
+      <div class="rounded-circle ">
 
-            </div>
-            <div class="product-info">
+      </div>
+      <div class="product-info">
 
-                <p><small class="">BOUTIQUE LENOVO</small></p>
-                <small>Fornisseur:DK-FRD-345</small>
-                <small>Inscrit le : 12/30/30 29:23</small>
-            </div>
-        </button>
+        <p><small class="">BOUTIQUE LENOVO</small></p>
+        <small>Fornisseur:DK-FRD-345</small>
+        <small>Inscrit le : 12/30/30 29:23</small>
+      </div>
+    </button>
 
-        <div class="d-flex col-md-9 flex-wrap">
-            <div style="width: 100%;display: flex;flex-wrap: wrap;gap: 10px;">
-                
-                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;">
-                    <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20"
-                        height="20" />
-                    Commandes</button>
-                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;">
-                    <img src="assets/img/icons/product.png" style="position: absolute;left: 10px;" alt="" width="20"
-                        height="20" />
-                        Produits</button>
-                <button style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;">
-                    <img src="assets/img/icons/comptable.png" style="position: absolute;left: 10px;" alt="" width="20"
-                        height="20" />
-                        Comptable</button>
+    <div class="d-flex col-md-9 flex-wrap">
+      <div style="width: 100%;display: flex;flex-wrap: wrap;gap: 10px;">
 
-                    
-                
-                
-            </div>
-            
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/commandes">
+          <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20" height="20"  />
+          Commandes</button>
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/products">
+          <img src="assets/img/icons/product.png" style="position: absolute;left: 10px;" alt="" width="20"
+            height="20" />
+          Produits</button>
+        <button
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/comptables">
+          <img src="assets/img/icons/comptable.png" style="position: absolute;left: 10px;" alt="" width="20"
+            height="20" />
+          Comptable</button>
+
+
+
+
+      </div>
+
+    </div>
+    <div class="col-md-2 ms-auto d-flex justify-content-end align-items-start">
+      <!-- <img src="assets/img/icons/filtre.png" alt="" width="30" height="30" /> -->
+    </div>
+  </div>
+
+  <div class="row box-2">
+
+
+    <!-- Cards -->
+    <div class="row mt-3 gap-3">
+      <div class="order-item w-auto "
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <small>Info Fournisseur</small>
+        <div class="d-flex align-items-center ">
+          <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image" />
+
+
+
+
+          <div class="product-info">
+
+            <p><small class="">BOUTIQUE LENOVO</small></p>
+            <small>0102030405</small>
+          </div>
         </div>
-        <div class="col-md-2 ms-auto d-flex justify-content-end align-items-start">
-            <!-- <img src="assets/img/icons/filtre.png" alt="" width="30" height="30" /> -->
+      </div>
+      <div class="order-item w-auto "
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#gerantModal">
+        <small>Info Gerant 1</small>
+        <div class="d-flex align-items-center ">
+          <img class="product-image rounded-circle" src="assets/img/profil/image_profil.jpeg" alt="Product Image" />
+
+
+
+
+          <div class="product-info">
+
+            <p><small class="">KOFFI MARCEL</small></p>
+            <small>0102030405</small>
+          </div>
         </div>
+      </div>
+      <div class="order-item w-auto "
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#gerantModal">
+        <small>Info Gerant 2</small>
+        <div class="d-flex align-items-center ">
+          <img class="product-image rounded-circle" src="assets/img/profil/image_profil.jpeg" alt="Product Image" />
+
+
+
+
+          <div class="product-info">
+
+            <p><small class="">YAO LUC</small></p>
+            <small>0102030405</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-item d-flex align-items-center w-auto "
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#compteModal">
+
+
+        <img class="product-image" src="assets/img/icons/profile.png" alt="Product Image"  />
+
+
+        <div class="product-info">
+
+          <p><small class="">INFORMATION SUR COMPTE</small></p>
+          <small>0102030405</small>
+
+        </div>
+      </div>
+
+
     </div>
 
-    <div class="row box-2">
-
-
-        <!-- Cards -->
-        <div class="row mt-3 gap-3">
-            <div class="order-item w-auto " style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);">
-                <small>Info Fournisseur</small>
-                <div class="d-flex align-items-center ">
-                    <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                         />
-
-                
-
-                
-                    <div class="product-info">
-
-                        <p><small class="">BOUTIQUE LENOVO</small></p>
-                        <small>0102030405</small>
-                    </div>
-                </div>
-            </div>
-            <div class="order-item w-auto " style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);">
-                <small>Info Gerant 1</small>
-                <div class="d-flex align-items-center ">
-                    <img class="product-image rounded-circle" src="assets/img/profil/image_profil.jpeg" alt="Product Image"
-                         />
-
-                
-
-                
-                    <div class="product-info">
-
-                        <p><small class="">KOFFI MARCEL</small></p>
-                        <small>0102030405</small>
-                    </div>
-                </div>
-            </div>
-            <div class="order-item w-auto " style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);">
-                <small>Info Gerant 2</small>
-                <div class="d-flex align-items-center ">
-                    <img class="product-image rounded-circle" src="assets/img/profil/image_profil.jpeg" alt="Product Image"
-                         />
-
-                
-
-                
-                    <div class="product-info">
-
-                        <p><small class="">YAO LUC</small></p>
-                        <small>0102030405</small>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="order-item d-flex align-items-center w-auto " style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);">
-
-
-                <img class="product-image" src="assets/img/icons/profile.png"  alt="Product Image"
-                    routerLink="commandes" />
-
-                
-                <div class="product-info">
-
-                    <p><small class="">INFORMATION SUR COMPTE</small></p>
-                    <small>0102030405</small>
-                  
-                </div>
-            </div>
-            
-            
-        </div>
-        
-    </div>
+  </div>
 </div>
 
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Info Compte -->
+<div class="modal fade" id="compteModal" tabindex="-1" aria-labelledby="compteModalLabel" aria-hidden="true">
 
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -152,82 +155,316 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
-      </div>
     </div>
-  
-  
-    <div class="fixed_fourn">
-      <div class="fixed_fourn1">
-  
-  
-        <div class="formu_fourn">
-          <div class="nominf">
-            <p style="padding-top: 10px;">Détail du marché</p>
-            <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
-              style="position: absolute;left: 20px;" />
-          </div>
-          <div class="nominf1">
-            <div class="nominf12">
-              <p style="padding-top: 10px;">Nom </p>
-              <p style="padding-top: 10px;">LEVEL BOUTIQUE</p>
+  </div>
+
+
+  <div class="fixed_fourn">
+    <div class="fixed_fourn1">
+
+
+      <div class="formu_fourngc">
+        <div class="nominf">
+          <p style="padding-top: 10px;text-align: center;text-transform: uppercase;">Info Compte</p>
+          <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+            style="position: absolute;left: 20px;" /> -->
+        </div>
+        <div class="nominf1">
+          <div class="nominf12" style="flex-direction: column;height: auto;">
+            <div class="nominf12" style="border: none;background-color: transparent ;" >
+              <p style="padding-top: 10px;">Compte Recharge </p>
+              <p style="padding-top: 10px;"></p>
             </div>
             <div class="nominf12">
-              <p style="padding-top: 10px;">NCC </p>
-              <p style="padding-top: 10px;">34567-4567</p>
+              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image"  />
+              <p style="padding-top: 10px;">0759028545</p>
             </div>
             <div class="nominf12">
-              <p style="padding-top: 10px;">N° FOURNISSEUR </p>
-              <p style="padding-top: 10px;">345678567</p>
-            </div>
-            <div class="nominf12">
-              <p style="padding-top: 10px;">CONTACT </p>
-              <p style="padding-top: 10px;">34567890</p>
-            </div>
-            <div class="nominf12">
-              <p style="padding-top: 10px;">VILLE/COMMUNE </p>
-              <p style="padding-top: 10px;">MARCORY</p>
-            </div>
-            <div class="nominf12">
-              <p style="padding-top: 10px;">LOCALISATION MAP </p>
-              <p style="padding-top: 10px;">MAP LOGO</p>
+              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image"  />
+              <p style="padding-top: 10px;">0759028545</p>
             </div>
           </div>
-          <div class="dosi">
-            <div class="dosi1">
-  
+          <!-- <div class="nominf12">
+            <p style="padding-top: 10px;">Prenom </p>
+            <p style="padding-top: 10px;">BOUTIQUE</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">POSTE </p>
+            <p style="padding-top: 10px;">GENERAL</p>
+          </div>
+          <div class="nominf12">
+            
+            <p style="padding-top: 10px;">N° CNI </p>
+            <p style="padding-top: 10px;">345678567</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">CONTACT </p>
+            <p style="padding-top: 10px;">34567890</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">VILLE/COMMUNE </p>
+            <p style="padding-top: 10px;">MARCORY</p>
+          </div> -->
+         
+          <!-- <div class="nominf12">
+            <p style="padding-top: 10px;">EMAIL</p>
+            <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>
+          </div> -->
+        </div>
+        <div class="nominf1">
+          <div class="nominf12" style="flex-direction: column;height: auto;">
+            <div class="nominf12" style="border: none;background-color: transparent ;" >
+              <p style="padding-top: 10px;">Compte Recharge </p>
+              <p style="padding-top: 10px;"></p>
             </div>
-            <p style="padding-top: 10px;min-width: 100px;text-align: center;">DOSSIER</p>
-            <div class="dosi1">
-  
+            <div class="nominf12">
+              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image"  />
+              <p style="padding-top: 10px;">0759028545</p>
+            </div>
+            <div class="nominf12">
+              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image"  />
+              <p style="padding-top: 10px;">0759028545</p>
             </div>
           </div>
-          <div class="nominf17">
-            <div class="carre1">
-              <small style="position: absolute;left: 10px;top: 10px;">logo</small>
-              <div class="cerclez">
-                <p style="color: white;font-size: 2rem;font-weight: bolder;padding-top: 10px;">LV</p>
-              </div>
-            </div>
-            <div class="carre2">
-              <div style="display: flex;justify-content: space-between;"> <small style="font-size: 0.6rem;">REGISTRE DE
-                  COMMERCE</small> <small style="font-size: 0.6rem;">2 images</small></div>
-              <div class="moncae" style="width: 100%;height: 70px;border: 1px solid gainsboro;">
-  
-              </div>
-            </div>
+          <!-- <div class="nominf12">
+            <p style="padding-top: 10px;">Prenom </p>
+            <p style="padding-top: 10px;">BOUTIQUE</p>
           </div>
-          <p style="padding-top: 30px;text-align: center;">CREER LE 17 JAN 2017</p>
-          <div
-            style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
-  
-            <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">POSTE </p>
+            <p style="padding-top: 10px;">GENERAL</p>
+          </div>
+          <div class="nominf12">
+            
+            <p style="padding-top: 10px;">N° CNI </p>
+            <p style="padding-top: 10px;">345678567</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">CONTACT </p>
+            <p style="padding-top: 10px;">34567890</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">VILLE/COMMUNE </p>
+            <p style="padding-top: 10px;">MARCORY</p>
+          </div> -->
+         
+          <!-- <div class="nominf12">
+            <p style="padding-top: 10px;">EMAIL</p>
+            <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>
+          </div> -->
+        </div>
+       
+
+        <div
+          style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+
+          <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<!-- Info Gerant -->
+<div class="modal fade" id="gerantModal" tabindex="-1" aria-labelledby="gerantModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+    </div>
+  </div>
+
+
+  <div class="fixed_fourn">
+    <div class="fixed_fourn1">
+
+
+      <div class="formu_fourng">
+        <div class="nominf">
+          <p style="padding-top: 10px;text-align: center;text-transform: uppercase;">Info Gerant</p>
+          <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+            style="position: absolute;left: 20px;" /> -->
+        </div>
+        <div class="nominf1">
+          <div class="nominf12">
+            <p style="padding-top: 10px;">Nom </p>
+            <p style="padding-top: 10px;">LEVEL BOUTIQUE</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">Prenom </p>
+            <p style="padding-top: 10px;">BOUTIQUE</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">POSTE </p>
+            <p style="padding-top: 10px;">GENERAL</p>
+          </div>
+          <div class="nominf12">
+            
+            <p style="padding-top: 10px;">N° CNI </p>
+            <p style="padding-top: 10px;">345678567</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">CONTACT </p>
+            <p style="padding-top: 10px;">34567890</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">VILLE/COMMUNE </p>
+            <p style="padding-top: 10px;">MARCORY</p>
+          </div>
+         
+          <div class="nominf12">
+            <p style="padding-top: 10px;">EMAIL</p>
+            <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>
           </div>
         </div>
-  
+        <div class="dosi">
+          <div class="dosi1">
+
+          </div>
+          <p style="padding-top: 10px;min-width: 100px;text-align: center;">DOSSIER</p>
+          <div class="dosi1">
+
+          </div>
+        </div>
+        <div class="nominf17">
+          <div class="carre1">
+            <small style="position: absolute;left: 10px;top: 10px;">logo</small>
+            <div class="cerclez">
+              <p style="color: white;font-size: 2rem;font-weight: bolder;padding-top: 10px;">LV</p>
+            </div>
+          </div>
+          <div class="carre2">
+            <div style="display: flex;justify-content: space-between;"> <small style="font-size: 0.6rem;">REGISTRE DE
+                COMMERCE</small> <small style="font-size: 0.6rem;">2 images</small></div>
+            <div class="moncae" style="width: 100%;height: 70px;border: 1px solid gainsboro;">
+
+            </div>
+          </div>
+        </div>
+        <p style="padding-top: 30px;text-align: center;">CREER LE 17 JAN 2017</p>
+        <div
+          style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+
+          <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
-  
+
     </div>
-  
-  
+
   </div>
+
+
+</div>
+<!-- Info Fournisseur -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+    </div>
+  </div>
+
+
+  <div class="fixed_fourn">
+    <div class="fixed_fourn1">
+
+
+      <div class="formu_fourn">
+        <div class="nominf">
+          <p style="padding-top: 10px;text-align: center;text-transform: uppercase;">Info fournisseur</p>
+          <!-- <img src="assets/img/icons/parametre.png" alt="Product Image" height="15px"
+            style="position: absolute;left: 20px;" /> -->
+        </div>
+        <div class="nominf1">
+          <div class="nominf12">
+            <p style="padding-top: 10px;">Nom </p>
+            <p style="padding-top: 10px;">LEVEL BOUTIQUE</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">NCC </p>
+            <p style="padding-top: 10px;">34567-4567</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">N° FOURNISSEUR </p>
+            <p style="padding-top: 10px;">345678567</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">CONTACT </p>
+            <p style="padding-top: 10px;">34567890</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">VILLE/COMMUNE </p>
+            <p style="padding-top: 10px;">MARCORY</p>
+          </div>
+          <div class="nominf12">
+            <p style="padding-top: 10px;">LOCALISATION MAP </p>
+            <p style="padding-top: 10px;">MAP LOGO</p>
+          </div>
+        </div>
+        <div class="dosi">
+          <div class="dosi1">
+
+          </div>
+          <p style="padding-top: 10px;min-width: 100px;text-align: center;">DOSSIER</p>
+          <div class="dosi1">
+
+          </div>
+        </div>
+        <div class="nominf17">
+          <div class="carre1">
+            <small style="position: absolute;left: 10px;top: 10px;">logo</small>
+            <div class="cerclez">
+              <p style="color: white;font-size: 2rem;font-weight: bolder;padding-top: 10px;">LV</p>
+            </div>
+          </div>
+          <div class="carre2">
+            <div style="display: flex;justify-content: space-between;"> <small style="font-size: 0.6rem;">REGISTRE DE
+                COMMERCE</small> <small style="font-size: 0.6rem;">2 images</small></div>
+            <div class="moncae" style="width: 100%;height: 70px;border: 1px solid gainsboro;">
+
+            </div>
+          </div>
+        </div>
+        <p style="padding-top: 30px;text-align: center;">CREER LE 17 JAN 2017</p>
+        <div
+          style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
+
+          <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
