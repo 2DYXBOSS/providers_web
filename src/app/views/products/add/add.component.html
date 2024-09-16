@@ -327,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-4"  style="min-width: 300px;background-color: rgba(244, 244, 244, 0.743);padding: 10px;border-radius: 10px;padding-bottom: 10px;" >
+            <!-- <div class="col-md-4 col-sm-6 mb-4"  style="min-width: 300px;background-color: rgba(244, 244, 244, 0.743);padding: 10px;border-radius: 10px;padding-bottom: 10px;" >
                 <input type="file" name="" id="download_image" style="display: none;">
 
                 <label for="download_image" class="images1" style="width: 100%;height: 250px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
@@ -345,36 +345,79 @@
                     <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
                     
 
-                       
-                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
+                 
+                        <img src="image upload" alt="Product Image" height="100%" width="100%"
                         style="border-radius: 5px;" />
                     </div>
-                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                  
                     
-
-                       
-        
-                    </div>
-                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
-                    
-
-                       
-                        <img src="assets/img/products/pducts-2.png" alt="Product Image" height="100%" width="100%"
-                        style="border-radius: 5px;" />
-                    </div>
-                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
-                    
-
-                       
-        
-                    </div>
 
                 </div>
               
                
                 
-            </div>
+            </div> -->
+            <!-- <div class="col-md-4 col-sm-6 mb-4"  style="min-width: 300px;background-color: rgba(244, 244, 244, 0.743);padding: 10px;border-radius: 10px;padding-bottom: 10px;" >
 
+                <input type="file" (change)="onImageUpload($event)" id="download_image" style="display: none;">
+            
+
+                <label for="download_image" class="images1" style="width: 100%;height: 250px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+
+                    <img *ngIf="!imageSrc" src="assets/img/downimage.png" style="margin-right: 10px;" alt="" width="50" height="50" />
+
+                    <img *ngIf="imageSrc" [src]="imageSrc" alt="Product Image" width="100%" height="100%" style="border-radius: 5px;"/>
+                    <p style="text-align: center;">Image principale <br>8 minimum</p>
+                </label>
+            
+
+                <div class="images1" style="width: 100%;border-radius: 10px;display: flex;align-items: center;justify-content: center;margin-top: 10px;gap: 10px;flex-wrap: wrap;">
+                    <div class="images1" style="width: 150px;height: 150px;border-radius: 10px;background-color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                        <img *ngIf="imageSrc" [src]="imageSrc" alt="Product Image" width="100%" height="100%" style="border-radius: 5px;" />
+                    </div>
+                </div>
+            </div>
+             -->
+
+             <!-- <div class="col-md-4 col-sm-6 mb-4" style="min-width: 300px; background-color: rgba(244, 244, 244, 0.743); padding: 10px; border-radius: 10px; padding-bottom: 10px;">
+
+                <input type="file" (change)="onImageUpload($event)" id="download_image" style="display: none;" multiple>
+            
+
+                <label for="download_image" class="images1" style="width: 100%; height: 250px; border-radius: 10px; background-color: white; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/img/downimage.png" style="margin-right: 10px;" alt="" width="50" height="50" />
+                    <p style="text-align: center;">Sélectionner des images <br> (8 minimum)</p>
+                </label>
+            
+
+                <div class="images1" style="width: 100%; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-top: 10px; gap: 10px; flex-wrap: wrap;">
+
+                    <div *ngFor="let image of imageSrcs" class="images1" style="width: 150px; height: 150px; border-radius: 10px; background-color: white; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <img [src]="image" alt="Product Image" width="100%" height="100%" style="border-radius: 5px;" />
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-4 col-sm-6 mb-4" style="min-width: 300px; background-color: rgba(244, 244, 244, 0.743); padding: 10px; border-radius: 10px; padding-bottom: 10px;">
+                <!-- Input d'image caché permettant plusieurs images -->
+                <input type="file" (change)="onImageUpload($event)" id="download_image" style="display: none;" multiple>
+            
+                <!-- Label stylisé pour le téléchargement d'image -->
+                <label for="download_image" class="images1" style="width: 100%; height: 250px; border-radius: 10px; background-color: white; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/img/downimage.png" style="margin-right: 10px;" alt="" width="50" height="50" />
+                    <p style="text-align: center;">Sélectionner des images <br> (8 minimum)</p>
+                </label>
+            
+                <!-- Zone de prévisualisation des images téléchargées -->
+                <div class="images1" style="width: 100%; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-top: 10px; gap: 10px; flex-wrap: wrap;">
+                    <!-- Afficher chaque image téléchargée -->
+                    <div *ngFor="let image of imageSrcs" class="images1" style="width: 150px; height: 150px; border-radius: 10px; background-color: white; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <img [src]="image" alt="Product Image" width="100%" height="100%" style="border-radius: 5px;" />
+                    </div>
+                </div>
+            </div>
+            
+            
+            
         </div>
 
 
