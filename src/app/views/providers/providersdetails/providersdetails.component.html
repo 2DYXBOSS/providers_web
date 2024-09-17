@@ -16,8 +16,7 @@
             Valider ma commande
           </button> -->
     <button type="button" style="border: none;background-color: transparent;"
-      class="order-item d-flex align-items-center justify-content-start order-item-large col-md-2 "
-      >
+      class="order-item d-flex align-items-center justify-content-start order-item-large col-md-2 ">
 
 
       <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image" />
@@ -36,16 +35,19 @@
       <div style="width: 100%;display: flex;flex-wrap: wrap;gap: 10px;">
 
         <button
-          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/commandes">
-          <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20" height="20"  />
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;"
+          routerLink="/providers/commandes">
+          <img src="assets/img/icons/cart.png " style="position: absolute;left: 10px;" alt="" width="20" height="20" />
           Commandes</button>
         <button
-          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/products">
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;"
+          routerLink="/providers/products">
           <img src="assets/img/icons/product.png" style="position: absolute;left: 10px;" alt="" width="20"
             height="20" />
           Produits</button>
         <button
-          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;" routerLink="/providers/comptables">
+          style="width: 30%;min-width: 150px;height: 40px;border: 1px solid gainsboro;background-color: white;color: black;position: relative;border-radius: 4px;"
+          routerLink="/providers/comptables">
           <img src="assets/img/icons/comptable.png" style="position: absolute;left: 10px;" alt="" width="20"
             height="20" />
           Comptable</button>
@@ -67,7 +69,51 @@
     <!-- Cards -->
     <div class="row mt-3 gap-3">
       <div class="order-item w-auto "
-        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);position: relative;"
+      >
+        
+        <div style="display: flex;justify-content: space-between;width: 100%;">
+          <small >Info Proprietaire </small>
+            <small style="color: black;padding-top: 20px;">AJOUTER UNE BOUTIQUE</small>
+        </div>
+        <div class="d-flex align-items-center ">
+          <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image" />
+
+
+
+
+          <div style="display: flex;justify-content: space-between;width: 100%;align-items: center;">
+
+            <small style="font-weight: bolder;font-size: 1.4rem;padding-right: 20px;">Yao Marc </small>
+            <small style="font-size: 1rem;">07 59028545</small>
+
+            <select name="" id="" style="position: absolute;right: 10px;border: 1px solid rgba(224, 223, 223, 0.539);padding: 5px 10px 10px 5px;">
+              <option value="">
+                <small style="font-weight: bolder;font-size: 1.4rem;padding-right: 20px;">Level boutique</small>
+              </option>
+              <option value="">
+                <small style="font-weight: bolder;font-size: 1.4rem;padding-right: 20px;">Level boutique</small>
+              </option>
+              <option value="">
+                <small style="font-weight: bolder;font-size: 1.4rem;padding-right: 20px;">Level boutique</small>
+              </option>
+              <option value="">
+                <small style="font-weight: bolder;font-size: 1.4rem;padding-right: 20px;">Level boutique</small>
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+     
+
+     
+
+    </div>
+    <div class="row mt-3 gap-3">
+      <div class="order-item w-auto "
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);"
+        data-bs-toggle="modal" data-bs-target="#exampleModal">
         <small>Info Fournisseur</small>
         <div class="d-flex align-items-center ">
           <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image" />
@@ -82,9 +128,10 @@
           </div>
         </div>
       </div>
-     
+
       <div class="order-item w-auto "
-        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#gerantModal">
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);"
+        data-bs-toggle="modal" data-bs-target="#gerantModal">
         <small>Info Gerant 2</small>
         <div class="d-flex align-items-center ">
           <img class="product-image rounded-circle" src="assets/img/profil/image_profil.jpeg" alt="Product Image" />
@@ -101,10 +148,11 @@
       </div>
 
       <div class="order-item d-flex align-items-center w-auto "
-        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#compteModal">
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);"
+        data-bs-toggle="modal" data-bs-target="#compteModal">
 
 
-        <img class="product-image" src="assets/img/icons/profile.png" alt="Product Image"  />
+        <img class="product-image" src="assets/img/icons/profile.png" alt="Product Image" />
 
 
         <div class="product-info">
@@ -115,23 +163,25 @@
         </div>
       </div>
       <div class="order-item w-auto "
-      style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);" data-bs-toggle="modal" data-bs-target="#gerantModal">
+        style="background-color: white;border-radius: 10px;box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.095);"
+        data-bs-toggle="modal" data-bs-target="#gerantModal">
 
-      <div class="d-flex align-items-center justify-content-center" style="flex-direction: column;margin: 0 auto;" >
-
-
-        <div class="product-image rounded-circle" style="display: flex;justify-content: center;background-color: ghostwhite;border: 1px solid gray;max-width: 50px;max-height: 50px;">
-          <h1>+</h1>
-        </div>
+        <div class="d-flex align-items-center justify-content-center" style="flex-direction: column;margin: 0 auto;">
 
 
-        <div class="product-info" style="width: 100%;display: flex;justify-content: center;">
+          <div class="product-image rounded-circle"
+            style="display: flex;justify-content: center;background-color: ghostwhite;border: 1px solid gray;max-width: 50px;max-height: 50px;padding-top: 2px;">
+            <h1>+</h1>
+          </div>
 
-          <p><small style="text-align: center;">Ajouter un gerant </small></p>
 
+          <div class="product-info" style="width: 100%;display: flex;justify-content: center;">
+
+            <p><small style="text-align: center;">Ajouter un gerant </small></p>
+
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
 
@@ -173,16 +223,16 @@
         </div>
         <div class="nominf1">
           <div class="nominf12" style="flex-direction: column;height: auto;">
-            <div class="nominf12" style="border: none;background-color: transparent ;" >
+            <div class="nominf12" style="border: none;background-color: transparent ;">
               <p style="padding-top: 10px;">Compte Recharge </p>
               <p style="padding-top: 10px;"></p>
             </div>
             <div class="nominf12">
-              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image"  />
+              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image" />
               <p style="padding-top: 10px;">0759028545</p>
             </div>
             <div class="nominf12">
-              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image"  />
+              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image" />
               <p style="padding-top: 10px;">0759028545</p>
             </div>
           </div>
@@ -207,7 +257,7 @@
             <p style="padding-top: 10px;">VILLE/COMMUNE </p>
             <p style="padding-top: 10px;">MARCORY</p>
           </div> -->
-         
+
           <!-- <div class="nominf12">
             <p style="padding-top: 10px;">EMAIL</p>
             <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>
@@ -215,16 +265,16 @@
         </div>
         <div class="nominf1">
           <div class="nominf12" style="flex-direction: column;height: auto;">
-            <div class="nominf12" style="border: none;background-color: transparent ;" >
+            <div class="nominf12" style="border: none;background-color: transparent ;">
               <p style="padding-top: 10px;">Compte Recharge </p>
               <p style="padding-top: 10px;"></p>
             </div>
             <div class="nominf12">
-              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image"  />
+              <img src="assets/img/Orangemoney.png" height="20px" width="20px" alt="Product Image" />
               <p style="padding-top: 10px;">0759028545</p>
             </div>
             <div class="nominf12">
-              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image"  />
+              <img src="assets/img/wave.png" height="20px" width="20px" alt="Product Image" />
               <p style="padding-top: 10px;">0759028545</p>
             </div>
           </div>
@@ -249,13 +299,13 @@
             <p style="padding-top: 10px;">VILLE/COMMUNE </p>
             <p style="padding-top: 10px;">MARCORY</p>
           </div> -->
-         
+
           <!-- <div class="nominf12">
             <p style="padding-top: 10px;">EMAIL</p>
             <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>
           </div> -->
         </div>
-       
+
 
         <div
           style="position: absolute;top: 70px;height: 30px;width: 30px;background-color: white;right: 40px;border-radius: 100%;display: flex;justify-content: center;align-items: center">
@@ -318,7 +368,7 @@
             <p style="padding-top: 10px;">GENERAL</p>
           </div>
           <div class="nominf12">
-            
+
             <p style="padding-top: 10px;">N° CNI </p>
             <p style="padding-top: 10px;">345678567</p>
           </div>
@@ -330,7 +380,7 @@
             <p style="padding-top: 10px;">VILLE/COMMUNE </p>
             <p style="padding-top: 10px;">MARCORY</p>
           </div>
-         
+
           <div class="nominf12">
             <p style="padding-top: 10px;">EMAIL</p>
             <p style="padding-top: 10px;"> mrmichaelkouamé.gmail.com </p>

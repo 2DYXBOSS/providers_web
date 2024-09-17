@@ -156,8 +156,10 @@
     
         currentRoute === '/providers' || 
         currentRoute === '/providers/commandes' || 
+        currentRoute === '/providers/add' || 
         currentRoute === '/providers/comptables' ||  
         currentRoute === '/providers/products' ||  
+        currentRoute === '/providers/add_admin' ||  
         currentRoute === '/providers/details' 
         ">
           <a routerLink="/providers/">
@@ -169,8 +171,10 @@
         
         currentRoute != '/providers' &&
         currentRoute != '/providers/commandes' &&
+        currentRoute != '/providers/add' &&
         currentRoute != '/providers/products' &&
         currentRoute != '/providers/comptables' && 
+        currentRoute != '/providers/add_admin' && 
         currentRoute != '/providers/details'
         ">
           <a routerLink="/providers/">
@@ -209,7 +213,7 @@
         </div>
         <li class="nav-item active" *ngIf="
         
-        
+     
         currentRoute === '/parameter'
         ">
           <a routerLink="/parameter">
@@ -219,6 +223,7 @@
         </li>
         
         <li class="nav-item"   *ngIf="
+        
         
         
         currentRoute != '/parameter'

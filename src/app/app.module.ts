@@ -10,10 +10,12 @@ import { RouterOutlet } from '@angular/router';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+
 
 
    

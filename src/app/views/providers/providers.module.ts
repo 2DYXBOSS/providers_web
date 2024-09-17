@@ -6,6 +6,9 @@ import { ProviderscommandesComponent } from './providerscommandes/providerscomma
 import { ProvidersproductsComponent } from './providersproducts/providersproducts.component';
 import { ProviderscomptablesComponent } from './providerscomptables/providerscomptables.component';
 import { ProvidersdetailsComponent } from './providersdetails/providersdetails.component';
+import { AddProvidersComponent } from './add-providers/add-providers.component';
+import { AddAdminComponent } from './add-admin/add-admin.component'
+
 
 
 const routes: Routes = [
@@ -29,6 +32,14 @@ const routes: Routes = [
     path: 'details',
     component: ProvidersdetailsComponent,
   },
+  {
+    path: 'add',
+    component: AddProvidersComponent,
+  },
+  {
+    path: 'add_admin',
+    component: AddAdminComponent,
+  },
   
 ];
 
@@ -40,6 +51,9 @@ const routes: Routes = [
     ProvidersproductsComponent,
     ProviderscomptablesComponent,
     ProvidersdetailsComponent,
+    AddProvidersComponent,
+    AddAdminComponent,
+
 
 
   ],

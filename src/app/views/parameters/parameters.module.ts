@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ParametersAllComponent } from './parameters-all/parameters-all.component';
 
+
 const routes: Routes = [
   {
     path: '',
     component: ParametersAllComponent,
   },
+  
   
   
  
@@ -17,7 +19,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    ParametersAllComponent
+    ParametersAllComponent,
+
   ],
   imports: [
     CommonModule,
