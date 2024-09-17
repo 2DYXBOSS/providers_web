@@ -114,7 +114,17 @@
             </div>
           </div>
           <div class="cartond2">
-            <small style="font-size: 0.8rem;color: black;padding-top: 10px;">TYPE DE LIVRAISON</small>
+            <small style="font-size: 0.8rem;color: black;padding-top: 10px;"><div class="dropdown">
+              <button class="btn btn-ligth dropdown-toggle" style="border: 1px solid gainsboro;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Changer le statut
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item btn btn-primary text-white mb-1" href="#">En cours de traitement</a></li>
+                <li><a class="dropdown-item btn btn-warning text-white mb-1" href="#">Décroche pas</a></li>
+                <li><a class="dropdown-item btn btn-success text-white mb-1" href="#">Reporter</a></li>
+                <li><a class="dropdown-item btn btn-danger text-white mb-1" href="#"  data-bs-toggle="modal" data-bs-target="#annuleModal">Annuler</a></li>
+              </ul>
+            </div></small>
           </div>
         </div>
         <div class="barcash">
@@ -478,6 +488,55 @@
           <!-- <img src="assets/img/icons/croix.png" alt="Product Image" height="15px"> -->
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+      </form>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="annuleModal" tabindex="-1" aria-labelledby="anuleModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+
+
+  <div class="fixed_fourn" >
+    <div class="fixed_fourn1" >
+
+      
+      <form action="" method="post" class="formu_fourn" style="height: 300px;background-color: white;position: relative;">
+        <p style="text-align: center;padding-top: 40px;color: black;">Voulez-vous vraiment <span style="color: red;font-weight: bolder;"> annuler</span>  
+          cette commande ?</p>
+        <div class="nominf" style="padding: 0px;border-top: 1px solid gainsboro;background-color: white;border-bottom: none;position: absolute;bottom: 0;">
+
+          <div style="width: 50%;height: 100%;background-color: white;">
+            <button style="width: 100%;height: 100%;border: none;border-right: 1px solid gainsboro;background-color: white;">Non</button>
+          </div>
+          <div style="width: 50%;height: 100%;background-color: white;">
+            <button style="width: 100%;height: 100%;border: none;background-color: white;">Oui</button>
+          </div>
+
+        </div>
+       
       </form>
 
     </div>

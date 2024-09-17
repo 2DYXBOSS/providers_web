@@ -458,3 +458,18 @@
     z-index: 99999;
 
 }
+
+/* Default style for all buttons */
+.tab-btn {
+    background-color: white;
+    border: 1px solid gainsboro;
+    color: gray;
+    
+  }
+  
+  /* Active tab style */
+  .active-tab {
+    border: 1px solid #FFA500;
+    color: #FFA500;
+  }
+  

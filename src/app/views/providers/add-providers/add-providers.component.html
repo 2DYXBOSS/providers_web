@@ -35,14 +35,43 @@
             <button class="btn btn-primary btn-border btn-round w-auto">
                 Annulées
             </button> -->
-            <div class="nav " id="nav-tab" role="tablist" style="position: absolute;bottom: -12px;">
+            <!-- <div class="nav " id="nav-tab" role="tablist" style="position: absolute;bottom: -12px;">
                
 
                 <button class="active" style="background-color: white;border: 1px solid #FFA500;color: #FFA500;padding-left: 20px;padding-right: 20px;border-radius: 20px;margin-right: 10px;" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Information propriétaire</button>
+
                 <button style="background-color: white;border: 1px solid gainsboro;color: gray;padding-left: 20px;padding-right: 20px;border-radius: 20px;margin-right: 10px;" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Information boutique</button>
+
                 <button style="background-color: white;border: 1px solid gainsboro;color: gray;padding-left: 20px;padding-right: 20px;border-radius: 20px;" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Information gerant</button>
                 
-              </div>
+              </div> -->
+
+
+              <div class="nav" id="nav-tab" role="tablist" style="position: absolute; bottom: -12px;">
+                <button
+                  class="tab-btn"
+                  [ngClass]="{ 'active-tab': selectedTab === 'home' }"
+                  (click)="selectTab('home')"
+                  style="padding-left: 20px; padding-right: 20px; border-radius: 20px; margin-right: 10px;" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                  Information propriétaire
+                </button>
+              
+                <button
+                  class="tab-btn"
+                  [ngClass]="{ 'active-tab': selectedTab === 'profile' }"
+                  (click)="selectTab('profile')"
+                  style="padding-left: 20px; padding-right: 20px; border-radius: 20px; margin-right: 10px;" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                  Information boutique
+                </button>
+              
+                <button
+                  class="tab-btn"
+                  [ngClass]="{ 'active-tab': selectedTab === 'contact' }"
+                  (click)="selectTab('contact')"
+                  style="padding-left: 20px; padding-right: 20px; border-radius: 20px;" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                  Information gérant
+                </button>
+            </div>
         </div>
         <div class="col-md-1 ms-auto d-flex justify-content-end">
 

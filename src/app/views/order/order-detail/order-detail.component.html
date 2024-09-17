@@ -59,7 +59,7 @@
           <li><a class="dropdown-item btn btn-primary text-white mb-1" href="#">En cours de traitement</a></li>
           <li><a class="dropdown-item btn btn-warning text-white mb-1" href="#">Décroche pas</a></li>
           <li><a class="dropdown-item btn btn-success text-white mb-1" href="#">Reporter</a></li>
-          <li><a class="dropdown-item btn btn-danger text-white mb-1" href="#">Annuler</a></li>
+          <li><a class="dropdown-item btn btn-danger text-white mb-1" href="#"  data-bs-toggle="modal" data-bs-target="#exampModal">Annuler</a></li>
         </ul>
       </div>
       <!-- <div class="dropdown" >
@@ -306,19 +306,27 @@
 
 
       <form action="" method="post" class="formu_fourn">
-        <div class="nominf">
-          <p style="padding-top: 10px;">Motif de l'annulation</p>
+        <div class="nominf" >
+          <p style="padding-top: 10px;text-align: center;text-transform: uppercase;margin: 0 auto;">Motif de l'annulation</p>
 
         </div>
         <div class="nominf1">
-          <select name="" id="" class="nominf12"></select>
+          <div class="dropdown">
+            <button class="btn btn-ligth dropdown-toggle nominf12"  style="border: 1px solid gainsboro;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sélectionner les motifs
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">En cours de traitement</a></li>
+              
+            </ul>
+          </div>
 
-          <input type="text" class="nominf12" placeholder="Prix Fournisseur">
-          <textarea name="" id="" style="resize: none;min-height:150px;"></textarea>
+          
+          <textarea name="" placeholder="Enseigner les motifs de l'annulation" class="nominf12" style="resize: none;min-height: 120px;" id=""></textarea>
 
 
         </div>
-        <div class="dosi">
+        <div class="dosi" >
           <button class="nominf12" style="background-color: red;display: flex;
           align-items: center;
           justify-content: center;">
@@ -338,7 +346,6 @@
     </div>
 
   </div>
-
 
 </div>
 <!-- Modal -->
