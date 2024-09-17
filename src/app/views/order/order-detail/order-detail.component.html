@@ -2,8 +2,8 @@
   <!-- Button Group -->
   <div class="row d-flex p-3 box-1">
     <div class="col-md-6 d-flex justify-content-between mb-3 mb-md-0">
-      <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/orders">
-        Centre commande
+      <button class="btn btn-primary btn-border btn-round w-50 me-3" style="width: auto;" routerLink="/orders">
+        Commande
       </button>
       <button class="btn btn-primary btn-border btn-round w-50 me-3" routerLink="/orders">
         Reporté
@@ -30,7 +30,7 @@
     <div class="d-flex justify-content-end align-items-center gap-3" style="width: 70%;flex-wrap: wrap;">
       <button class="btn btn-border-custom w-auto" type="button">APPELER</button>
 
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <select class="btn btn-secondary form-select " aria-label="Default select example">
 
           <option value="1">
@@ -50,6 +50,17 @@
               style="background-color: red;color: white;margin-top: 5px;border: none;">Annuelé</div>
           </option>
         </select>
+      </div> -->
+      <div class="dropdown">
+        <button class="btn btn-ligth dropdown-toggle" style="border: 1px solid gainsboro;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          MARQUER
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item btn btn-primary text-white mb-1" href="#">En cours de traitement</a></li>
+          <li><a class="dropdown-item btn btn-warning text-white mb-1" href="#">Décroche pas</a></li>
+          <li><a class="dropdown-item btn btn-success text-white mb-1" href="#">Reporter</a></li>
+          <li><a class="dropdown-item btn btn-danger text-white mb-1" href="#">Annuler</a></li>
+        </ul>
       </div>
       <!-- <div class="dropdown" >
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
