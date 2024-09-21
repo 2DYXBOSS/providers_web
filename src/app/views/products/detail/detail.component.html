@@ -270,25 +270,26 @@
     </div>
     <div class="forue2">
         <!-- Default dropup button -->
-        <div class="dropdown" >
-            <select class="btn form-select " style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;" aria-label="Default select example">
-    
-              <option value="1">
-                <div class="dropdown-item btn btn-border-custom w-auto"
-                  style="background-color: red;color: white;margin-top: 5px;border: none;">Marquer </div>
-              </option>
-              
-              <option value="2">
-                <div class="dropdown-item btn btn-border-custom w-auto"
-                  style="background-color: orange;color: white;margin-top: 5px;">Modifier les infos</div>
-              </option>
-              <option value="3">
-                <div class="dropdown-item btn btn-border-custom w-auto"
-                  style="background-color: red;color: white;margin-top: 5px;border: none;">Non conforme</div>
-              </option>
-            </select>
-          </div>
-      
+        <div class="btn-group dropup">
+            <button type="button"
+                style="background-color: white;width: auto;border: 1px solid black;padding: 5px 50px 5px 50px;border-radius: 20px;color: black;position: relative;"
+                class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/update.png" style="margin-right: 10px;position: absolute;left: 10px;top: 4px;"
+                    alt="" width="20" height="20" routerLink="/orders/" /> Marquer
+            </button>
+            <ul class="dropdown-menu" style="padding-left: 5px;padding-right: 5px;">
+                <div class="dropdown-item w-auto heigth_style"
+                    style="background-color: white;color: black;border-bottom: 1px solid rgb(231, 231, 231);padding-bottom: 5px;">
+                    Marquer </div>
+                <div class="dropdown-item w-auto"
+                    style="background-color: white;color: black;border-bottom: 1px solid rgb(231, 231, 231);padding-bottom: 5px;" >
+                    Modifier les infos</div>
+                <div class="dropdown-item w-auto"
+                    style="background-color: white;color: black;border: none;padding-bottom: 5px;">Non conforme
+                </div>
+
+            </ul>
+        </div>
         
         <button style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;"   routerLink="/products/add">
             Mettre en stock
@@ -298,3 +299,47 @@
         </button>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="btn-group dropup">
+                <button type="button"
+                    style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;position: relative;"
+                    class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/img/update.png" style="margin-right: 10px;position: absolute;left: 10px;top: 4px;"
+                        alt="" width="20" height="20" routerLink="/orders/" /> Marquer
+                </button>
+                <ul class="dropdown-menu" style="padding-left: 5px;padding-right: 5px;">
+                    <div class="dropdown-item w-auto heigth_style"
+                        style="background-color: white;color: black;border-bottom: 1px solid rgb(231, 231, 231);padding-bottom: 5px;">
+                        Marquer </div>
+                    <div class="dropdown-item w-auto"
+                        style="background-color: white;color: black;border-bottom: 1px solid rgb(231, 231, 231);padding-bottom: 5px;" >
+                        Modifier les infos</div>
+                    <div class="dropdown-item w-auto"
+                        style="background-color: white;color: black;border: none;padding-bottom: 5px;">Non conforme
+                    </div>
+
+                </ul>
+            </div>
+
+            <button
+                style="background-color: white;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: orange;"
+                routerLink="/products/add">
+                Mettre en stock
+            </button>
+            <button
+                style="background-color: orange;width: auto;border: 1px solid orange;padding: 5px 50px 5px 50px;border-radius: 20px;color: white;"
+                routerLink="/products/add">
+                Publier
+            </button>
+        </div>
+    </div> -->

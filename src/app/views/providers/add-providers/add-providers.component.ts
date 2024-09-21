@@ -6,14 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-providers.component.css']
 })
 export class AddProvidersComponent {
-  selectedTab: string = 'home';
+  selectedTab: string = 'proprietaire';
 
-  // Function to change the selected tab
   selectTab(tab: string) {
     this.selectedTab = tab;
   }
-
-
-
-  
 }

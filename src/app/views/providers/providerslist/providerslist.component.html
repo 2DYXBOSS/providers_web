@@ -1,186 +1,269 @@
 <div class="container-fluid mt-5 p-3">
-    <!-- Button Group -->
-    <div class="row d-flex p-3 box-1">
-        <div class="col-md-6 d-flex justify-content-between mb-3 mb-md-0">
-           
-            <div class="nav " id="nav-tab" role="tablist">
-                <button class="nav-link active btn-round btn-border btn btn-info" style="width: auto;" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Fornisseur Actif</button>
-                <button class="nav-link btn-round btn-border btn btn-primary" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Inactifs</button>
-                
-              </div>
-        </div>
-        <div class="col-md-4 ms-auto d-flex justify-content-end">
-
-        </div>
-    </div>
-
-   
-
-
-
-    <div class="tab-content" id="nav-tabContent">
-
-        <!-- Tout -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-          <!-- on boucle ceci -->
-          <div class="row box-2">
-            <div class="row mt-1 p-2">
-                <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
-                    style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
-                    <div class="col-4">
-                        <p class="mb-0">Total: 1 101</p>
-                    </div>
-                    <div class="col-8 d-flex justify-content-end align-items-center">
-                        <div class="input-group search-bar">
-                            <input type="text" placeholder="Recherche" class="form-control" />
-                            
-                            <div class="input-group-append">
-                              <span class="input-group-text">
-                                  <span class="input-group-bar"></span>
-                                <i class="fa fa-search search-icon"></i>
-                              </span>
-                            </div>
-                        </div>
-                           
-                       
-                        <div class="dropdown">
-                            <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false"
-                                style="padding-right: 1.5rem; position: relative">
-                                Trier
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 d-flex flex-wrap order-row align-items-center">
-                <div class="order-item d-flex align-items-center order-item-large">
-                    <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                        routerLink="commandes" />
-                    <div class="rounded-circle ">
-    
-                    </div>
-                    <div class="product-info">
-    
-                        <p><small class="">BOUTIQUE LENOVO</small></p>
-                        <small>Fornisseur:DK-FRD-345</small>
-                        <small>Inscrit le : 12/30/30 29:23</small>
-                    </div>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Prix de vente</p>
-                    <p class="value">10 000 FCFA</p>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Frais de livraison</p>
-                    <p class="value">2 000 FCFA</p>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Total à payer</p>
-                    <p class="value mb-0 colore">12 000 FCFA</p>
-                    <small>À la livraison</small>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Lieu de livraison</p>
-                    <p class="value colore">Abobo ...</p>
-                </div>
-    
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Lieu de livraison</p>
-                    <p class="value colore">Abobo ...</p>
-                </div>
-    
-            </div>
-        </div>
-        </div>
-        <!-- Commande -->
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-            <!-- on boucle ceci -->
-          <div class="row box-2">
-            <div class="row mt-1 p-2">
-                <div class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
-                    style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4">
-                    <div class="col-4">
-                        <p class="mb-0">Total: 1 101</p>
-                    </div>
-                    <div class="col-8 d-flex justify-content-end align-items-center">
-                        <div class="input-group search-bar">
-                            <input type="text" placeholder="Recherche" class="form-control" />
-                            
-                            <div class="input-group-append">
-                              <span class="input-group-text">
-                                  <span class="input-group-bar"></span>
-                                <i class="fa fa-search search-icon"></i>
-                              </span>
-                            </div>
-                        </div>
-                           
-                       
-                        <div class="dropdown">
-                            <button class="btn btn-round dropdown-toggle btn-tri" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false"
-                                style="padding-right: 1.5rem; position: relative">
-                                Trier
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 d-flex flex-wrap order-row align-items-center">
-                <div class="order-item d-flex align-items-center order-item-large">
-                    <img class="product-image rounded-circle" src="assets/img/logoAdm.png" alt="Product Image"
-                        routerLink="commandes" />
-                    <div class="rounded-circle ">
-    
-                    </div>
-                    <div class="product-info">
-    
-                        <p><small class="">BOUTIQUE LENOVO</small></p>
-                        <small>Fornisseur:DK-FRD-345</small>
-                        <small>Inscrit le : 12/30/30 29:23</small>
-                    </div>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Prix de vente</p>
-                    <p class="value">10 000 FCFA</p>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Frais de livraison</p>
-                    <p class="value">2 000 FCFA</p>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Total à payer</p>
-                    <p class="value mb-0 colore">12 000 FCFA</p>
-                    <small>À la livraison</small>
-                </div>
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Lieu de livraison</p>
-                    <p class="value colore">Abobo ...</p>
-                </div>
-    
-                <div class="order-item" style="border-left: 1px solid #ccc; padding-left: 30px">
-                    <p class="label">Lieu de livraison</p>
-                    <p class="value colore">Abobo ...</p>
-                </div>
-    
-            </div>
-        </div>
-        </div>
-        
-       
-       
-    
+  <!-- Button Group -->
+  <div class="row d-flex p-3 box-1">
+    <div class="col-md-6 d-flex justify-content-between mb-3 mb-md-0">
+      <div class="nav" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active btn-round btn-border btn btn-info"
+          style="width: auto"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          Fornisseur Actif
+        </button>
+        <button
+          class="nav-link btn-round btn-border btn btn-primary"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          Inactifs
+        </button>
       </div>
+    </div>
+    <div class="col-md-4 ms-auto d-flex justify-content-end">
+      <button
+        class="btn btn-primary btn-border btn-round btn-add button_style" style="width: 70%;max-height: 40px;display: flex;align-items: center;justify-content: center;min-width: 200px;"
+        routerLink="/providers/add"
+      >
+        Ajouter un produit
+      </button>
+    </div>
+  </div>
+
+  <div class="tab-content" id="nav-tabContent">
+    <!-- Tout -->
+    <div
+      class="tab-pane fade show active"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+      tabindex="0"
+    >
+      <!-- on boucle ceci -->
+      <div class="row box-2">
+        <div class="row mt-1 p-2">
+          <div
+            class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4"
+          >
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group search-bar">
+                <input
+                  type="text"
+                  placeholder="Recherche"
+                  class="form-control"
+                />
+
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <span class="input-group-bar"></span>
+                    <i class="fa fa-search search-icon"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-round dropdown-toggle btn-tri"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="padding-right: 1.5rem; position: relative"
+                >
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img
+              class="product-image rounded-circle"
+              src="assets/img/logoAdm.png"
+              alt="Product Image"
+              routerLink="commandes"
+            />
+            <div class="rounded-circle"></div>
+            <div class="product-info">
+              <p><small class="">BOUTIQUE LENOVO</small></p>
+              <small>Fornisseur:DK-FRD-345</small>
+              <small>Inscrit le : 12/30/30 29:23</small>
+            </div>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Commande -->
+    <div
+      class="tab-pane fade"
+      id="nav-profile"
+      role="tabpanel"
+      aria-labelledby="nav-profile-tab"
+      tabindex="0"
+    >
+      <!-- on boucle ceci -->
+      <div class="row box-2">
+        <div class="row mt-1 p-2">
+          <div
+            class="col-12 d-flex justify-content-between align-items-center pt-2 pb-2"
+            style="background-color: #f8f8fb; border-bottom: 1px solid #c4c4c4"
+          >
+            <div class="col-4">
+              <p class="mb-0">Total: 1 101</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+              <div class="input-group search-bar">
+                <input
+                  type="text"
+                  placeholder="Recherche"
+                  class="form-control"
+                />
+
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <span class="input-group-bar"></span>
+                    <i class="fa fa-search search-icon"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-round dropdown-toggle btn-tri"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="padding-right: 1.5rem; position: relative"
+                >
+                  Trier
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex flex-wrap order-row align-items-center">
+          <div class="order-item d-flex align-items-center order-item-large">
+            <img
+              class="product-image rounded-circle"
+              src="assets/img/logoAdm.png"
+              alt="Product Image"
+              routerLink="commandes"
+            />
+            <div class="rounded-circle"></div>
+            <div class="product-info">
+              <p><small class="">BOUTIQUE LENOVO</small></p>
+              <small>Fornisseur:DK-FRD-345</small>
+              <small>Inscrit le : 12/30/30 29:23</small>
+            </div>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Prix de vente</p>
+            <p class="value">10 000 FCFA</p>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Frais de livraison</p>
+            <p class="value">2 000 FCFA</p>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Total à payer</p>
+            <p class="value mb-0 colore">12 000 FCFA</p>
+            <small>À la livraison</small>
+          </div>
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+
+          <div
+            class="order-item"
+            style="border-left: 1px solid #ccc; padding-left: 30px"
+          >
+            <p class="label">Lieu de livraison</p>
+            <p class="value colore">Abobo ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

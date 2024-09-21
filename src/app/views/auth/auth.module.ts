@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignInComponent } from './sign-in/sign-in.component';
 const routes: Routes = [
   {
-    path: 'sign_in',
+    path: '',
     component: SignInComponent,
   },
-
- 
+  {
+    path: 'sign_in',
+    component: SignInComponent,
+  }
 ];
 
 
