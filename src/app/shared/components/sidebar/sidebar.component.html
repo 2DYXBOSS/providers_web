@@ -1,9 +1,9 @@
 <!-- Sidebar -->
 <div class="sidebar">
-  <div class="sidebar-logo">
+  <div class="sidebar-logo" >
     <!-- Logo Header -->
     <div class="logo-header">
-      <a routerLink="/" class="logo">
+      <a routerLink="/dashboard" class="logo">
         <!-- <img src="assets/img/logo.png" alt="navbar brand" class="navbar-brand" height="40" /> -->
         <div class="logo-name">
           <span class="color-primary" style="font-size: 1.2rem;color: #FF9500;"><span
@@ -14,8 +14,8 @@
             </span></span>
         </div>
       </a>
-      <div class="nav-toggle">
-        <button class="btn btn-toggle toggle-sidebar">
+      <div class="nav-toggle" style="margin-left: 15px;">
+        <button class="btn btn-toggle toggle-sidebar" >
           <i class="gg-menu-right"></i>
         </button>
         <button class="btn btn-toggle sidenav-toggler">
@@ -28,18 +28,18 @@
     </div>
     <!-- End Logo Header -->
   </div>
-  <div class="sidebar-wrapper scrollbar scrollbar-inner" style="margin-right: 10px !important">
+  <div class="sidebar-wrapper scrollbar scrollbar-inner" style="min-width: 200px !important;margin-right: 10px !important">
     <div class="sidebar-content">
       <ul class="nav nav-secondary">
         <li class="nav-item active" *ngIf="currentRoute === '/dashboard' ">
-          <a routerLink="/">
+          <a routerLink="/dashboard">
             <img src="assets/img/icons/home.png" height="20" style="margin-right: 15px;" />
             <p>Tableau de bord</p>
             <!-- <span class="badge badge-success">4</span> -->
           </a>
         </li>
         <li class="nav-item" *ngIf="currentRoute != '/dashboard'">
-          <a routerLink="/">
+          <a routerLink="/dashboard">
             <img src="assets/img/icons/home.png" height="20" style="margin-right: 15px" />
             <p>Tableau de bord</p>
             <!-- <span class="badge badge-success">4</span> -->
@@ -60,9 +60,10 @@
 
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="border: none;">
-                <img src="assets/img/icons/cart.png" height="20" style="margin-right: 15px" />
-                Commandes
+                aria-expanded="false" style="border: none;font-weight: bolder;">
+                <img src="assets/img/icons/cart.png" height="20" style="margin-right: 15px;margin-left: 5px;" />
+                
+                <span style="font-weight: bolder;margin-left: 1px;color: #6a6a6a;">Commandes</span>
               </button>
               <ul class="dropdown-menu " role="menu" style="width: 235px;background-color: rgb(255, 245, 247);">
                 <li style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;">
@@ -97,8 +98,8 @@
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" style="border: none;">
-                <img src="assets/img/icons/cart.png" height="20" style="margin-right: 15px" />
-                Commandes
+                <img src="assets/img/icons/cart.png" height="20" style="margin-right: 15px;margin-left: 5px;" />
+                <span style="font-weight: bolder;margin-left: 1px;color: #6a6a6a;">Commandes</span>
               </button>
               <ul class="dropdown-menu " role="menu" style="width: 235px;background-color: rgb(255, 245, 247);">
                 <li style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;">
